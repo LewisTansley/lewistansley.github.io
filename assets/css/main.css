@@ -3244,11 +3244,11 @@ input, select, textarea {
 		}
 
 		.wrapper.style1-alt {
-			background-color: #292929;
+			background-color: #242424;
 		}
 
 		.wrapper.style2 {
-			background-color: #4a4a4a;
+			background-color: #4e4e4e;
 		}
 
 		.wrapper.style2-alt {
@@ -3874,7 +3874,7 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		background-image: url("images/HighresScreenshot00001.png");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
