@@ -3000,16 +3000,28 @@ input, select, textarea {
 	}
 
 		body.is-ie .spotlights > section {
+			
 			min-height: 0;
 		}
 
 		.spotlights > section > .image {
+			
 			background-position: center center;
 			background-size: cover;
 			border-radius: 0;
 			display: block;
 			position: relative;
+			transform: scale(0.98);
 			width: 25em;
+			filter: blur(5px);
+			
+		}
+		
+			.spotlights > section > .image:hover {
+			filter: blur(0px);
+			transform: scale(1.00);
+			
+			
 		}
 
 			.spotlights > section > .image img {
@@ -3489,6 +3501,20 @@ input, select, textarea {
 		margin: 0 auto;
 	}
 
+	.wrapper > .inner > .iframe{
+		overflow: hidden;
+ 		/* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
+  		padding-top: 56.25%;
+		  position: relative;
+	}
+	.wrapper > .inner > .iframe iframe{
+		border: 0;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;	
+	}
 /* Footer */
 
 	#sidebar + #wrapper + #footer {
@@ -3877,17 +3903,19 @@ input, select, textarea {
 		background-image: url("images/BG.png");
 		background-position: top right;
 		background-repeat: no-repeat;
-		background-size: 150% auto;
+		background-size: 150% auto;	 
+		
 	}
-
 		#intro p {
 			font-size: 1.25em;
+			
 		}
 
 			@media screen and (max-width: 980px) {
 
 				#intro p br {
 					display: none;
+					
 				}
 
 			}
