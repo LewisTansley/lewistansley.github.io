@@ -2529,6 +2529,7 @@ input, select, textarea {
 			text-align: center;
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
+
 		}
 
 			.icon.major:before {
@@ -2537,32 +2538,32 @@ input, select, textarea {
 
 				.wrapper.style1 .icon.major:before {
 					color: #5e42a6;
-					filter: blur(5px);
+
 				}
 
 				.wrapper.style1-alt .icon.major:before {
 					color: #493382;
-					filter: blur(5px);
+
 				}
 
 				.wrapper.style2 .icon.major:before {
 					color: #5052b5;
-					filter: blur(5px);
+
 				}
 
 				.wrapper.style2-alt .icon.major:before {
 					color: #3e4094;
-					filter: blur(5px);
+
 				}
 
 				.wrapper.style3 .icon.major:before {
 					color: #b74e91;
-					filter: blur(5px);
+
 				}
 
 				.wrapper.style3-alt .icon.major:before {
 					color: #953d75;
-					filter: blur(5px);
+
 				}
 
 /* Image */
@@ -3042,6 +3043,7 @@ input, select, textarea {
 				position: absolute;
 				top: 0;
 				width: 100%;
+
 			}
 
 		.spotlights > section > .content {
@@ -3902,7 +3904,7 @@ input, select, textarea {
 		background-image: url("images/BG.png");
 		background-position: top right;
 		background-repeat: no-repeat;
-		background-size: 150% auto;	 
+		background-size: auto auto;	 
 		
 	}
 		#intro p {
