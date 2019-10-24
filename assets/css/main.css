@@ -2537,26 +2537,32 @@ input, select, textarea {
 
 				.wrapper.style1 .icon.major:before {
 					color: #5e42a6;
+					filter: blur(5px);
 				}
 
 				.wrapper.style1-alt .icon.major:before {
 					color: #493382;
+					filter: blur(5px);
 				}
 
 				.wrapper.style2 .icon.major:before {
 					color: #5052b5;
+					filter: blur(5px);
 				}
 
 				.wrapper.style2-alt .icon.major:before {
 					color: #3e4094;
+					filter: blur(5px);
 				}
 
 				.wrapper.style3 .icon.major:before {
 					color: #b74e91;
+					filter: blur(5px);
 				}
 
 				.wrapper.style3-alt .icon.major:before {
 					color: #953d75;
+					filter: blur(5px);
 				}
 
 /* Image */
@@ -2566,9 +2572,6 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
-	}
-	.image meImg{
-		
 	}
 
 		.image img {
@@ -3016,19 +3019,10 @@ input, select, textarea {
 			border-radius: 0;
 			display: block;
 			position: relative;
-			transform: scale(0.98);
 			width: 25em;
-			filter: blur(5px);
-			
-		}
-		
-			.spotlights > section > .image:hover {
-			filter: blur(0px);
-			transform: scale(1.00);
 			
 			
 		}
-
 			.spotlights > section > .image img {
 				border-radius: 0;
 				display: block;
