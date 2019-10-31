@@ -25,7 +25,9 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 @font-face{
+	src: format();
 	font-display: swap;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 article, aside, details, figcaption, figure,
