@@ -3902,14 +3902,27 @@ input, select, textarea {
 
 /* Intro */
 
-	#intro {
+
+#intro {
+	background-attachment: fixed;
+	background-image: url("images/BG.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: auto auto;	 
+		
+}
+
+	#introBlog {
 		background-attachment: fixed;
-		background-image: url("images/BG.png");
+		background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url(images/Keyboard.jpg);
 		background-position: top right;
 		background-repeat: no-repeat;
-		background-size: auto auto;	 
+		background-size: 1920px auto;	 
 		
 	}
+
+	
+
 		#intro p {
 			font-size: 1.25em;
 			
