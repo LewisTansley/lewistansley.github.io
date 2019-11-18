@@ -7,31 +7,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="assets/js/jquery-3.4.1.js"></script>
+		<script> 
+			$(function(){
+			$("#header").load("header.html"); 	
+			$("#footer").load("footer.html"); 
+			});
+		</script> 
 	</head>
 	<body class="is-preload">
 
 	<!-- Header -->
-	<header id="header">
-		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<!-- <li><a href="inprogress">File Server</a></li>
-				<li><a href="inprogress">Forum</a></li> -->
-				<li><a href="blog">Blog</a></li>
-			</ul>
-		</nav>
-	</header>
+	<div id="header"></div>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Apologies!</h1>
+							<h1 class="major">404 - Page Not Found</h1>
 							<!-- <span class="image fit"><img src="images/pic04.jpg" alt="" /></span> --> 
-							<p>Looks like I broke the site again.</p>
+							<h2>Looks like I broke the site again.</h2>
 							<p>Please return Home until the issue is fixed.</p>
-							<div class="tenor-gif-embed" data-postid="13396526" data-share-method="host" data-width="25%" data-aspect-ratio="1.0"><a href="https://tenor.com/view/scotty-startrek-im-giving-her-all-shes-got-gif-13396526">Scotty Startrek GIF</a> from <a href="https://tenor.com/search/scotty-gifs">Scotty GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+							<div class="image-fit" data-postid="13396526" data-share-method="host" data-width="25%" data-aspect-ratio="1.0"><a href="https://tenor.com/view/scotty-startrek-im-giving-her-all-shes-got-gif-13396526">Scotty Startrek GIF</a> from <a href="https://tenor.com/search/scotty-gifs">Scotty GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 							</p>
 							</div>
 					</section>
@@ -39,13 +37,7 @@
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Lewis Tansley (2019). All rights reserved.</li> 
-					</ul>
-				</div>
-			</footer>
+		<div id="footer"></div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
