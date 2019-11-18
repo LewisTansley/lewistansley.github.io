@@ -81,8 +81,8 @@
 					// Scrollex.
 						$section.scrollex({
 							mode: 'middle',
-							top: '-25vh',
-							bottom: '-25vh',
+							top: '-20vh',
+							bottom: '-20vh',
 							initialize: function() {
 
 								// Deactivate section.
