@@ -3217,6 +3217,10 @@ input, select, textarea {
 			}
 
 /* Wrapper */
+.make-it-fit {
+    max-width: 99%;
+    max-height: 99%;
+}
 
 	.wrapper {
 		position: relative;
