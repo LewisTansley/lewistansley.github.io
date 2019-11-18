@@ -7,6 +7,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="assets/js/jquery-3.4.1.js"></script>
+		<script> 
+			$(function(){
+			$("#footer").load("footer.html"); 
+			});
+		</script> 
+
 	</head>
 	<body class="is-preload">
 
@@ -117,13 +124,7 @@
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Lewis Tansley (2019). All rights reserved.</li> 
-					</ul>
-				</div>
-			</footer>
+		<div id="footer"></div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
