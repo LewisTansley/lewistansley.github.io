@@ -34,6 +34,11 @@ $(function() {
             valFunc = 1;
         }
 
+        if($(this).val().substring(0) === 'exit'){
+            location.replace("\\");
+            valFunc = 1;
+        }
+
         if($(this).val().substring(0) === 'run'){
 
             if(pathText === 'MAINFRAME:\\\\SUPERUSER\\D\\21031984\\N\\01.img'){
