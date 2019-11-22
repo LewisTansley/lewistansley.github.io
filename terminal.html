@@ -12,19 +12,22 @@
 </head>
 <body>
 
+    <audio autoplay>
+        <source src="assets/audio/Boot.wav" type="audio/wav">
+        <source src="assets/audio/Boot2.mp3" type="audio/mpeg">
+    </audio>
+
 <div class="faux">
 
-    <audio src="assets/audio/Boot" autoplay></audio>
-
 <pre>                                                                                     
-    //   ) )  //   / / //   ) ) //   / /  //   ) )  //   / / //   ) )  //   / /  //   ) ) 
-   ((        //   / / //___/ / //____    //___/ /  //   / / ((        //____    //___/ /  
-     \\     //   / / / ____ / / ____    / ___ (   //   / /    \\     / ____    / ___ (    
-       ) ) //   / / //       //        //   | |  //   / /       ) ) //        //   | |    
-((___ / / ((___/ / //       //____/ / //    | | ((___/ / ((___ / / //____/ / //    | |  
+    ____ __  __ ___   ____ ___   __  __ ____ ____ ___ 
+   / __// / / // _ \ / __// _ \ / / / // __// __// _ \
+  _\ \ / /_/ // ___// _/ / , _// /_/ /_\ \ / _/ / , _/
+ /___/ \____//_/   /___//_/|_| \____//___//___//_/|_| 
+  
 </pre>
   <div class="bumf">
-  <p>SUPERFRAME [Version id 2.6.8.2345.12</p>
+  <p>SUPERFRAME [Version id 2.6.8.2345.12]</p>
   <p>(c) 1984 UNSD. All rights reserved.</p>
   </div> 
 </div>
@@ -65,9 +68,12 @@ $(function() {
       // crappy implementation here, but you get the idea
       if($(this).val().substring(0, 3) === 'cd '){
         $('#path').html('MAINFRAME:\\\\ADMINISTRATOR\\'+$(this).val().substring(3)+'&nbsp;>&nbsp;');
-
       }
       
+      if($(this).val().substring(0) === 'clear'){
+          document.getElementById("history").innerHTML = "";
+      }
+
       // clear the input
       $('#input').val('');
       

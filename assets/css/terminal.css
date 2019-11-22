@@ -4,7 +4,12 @@ body{
     margin: 0px;
 
 }
+img{
 
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+
+}
 .overlay{
   
   position: fixed; /* Sit on top of the page content */
@@ -84,7 +89,7 @@ body{
 
     /* white-space: nowrap; */
     width:100%;
-    animation: typing 2s steps(21, end);
+    animation: typing 4s steps(52, end);
     overflow: hidden;
 
   }
@@ -97,9 +102,4 @@ body{
 
     }
 
-}
-.bumf{
-
-
-  
 }
