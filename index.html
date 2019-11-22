@@ -4,69 +4,59 @@
 	<head>
 		<title>Home</title>
 		<meta charset="utf-8" />
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> -->
-
-		<meta name="google-site-verification" content="ff3rlViPAILSKrPANfVkB0Nf4w59eUVDwr0HxBEkHaQ" />
-
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" defer/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
+		<script src="assets/js/jquery-3.4.1.js"></script>
+		<script> 
+			$(function(){
+			$("#footer").load("footer.html"); 
+			});
+		</script> 
 
 	</head>
 	<body class="is-preload">
-		
-		<!-- Header -->
-		<header id="header">
-				<nav>
-					<ul>
-					<li><a href="/">Home</a></li>
-					<!-- <li><a href="inprogress">File Server</a></li>
-					<li><a href="inprogress">Forum</a></li> -->
-					<li><a href="blog">Blog</a></li>
-					</ul>
-				</nav>
-			</header>
-
-
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#header">Navigation</a></li>
+							<!-- <li><a href="#header">Navigation</a></li> -->
 							<li><a href="#intro">Home</a></li>
-							<li><a href="#two">Snapshots</a></li>
-							<li><a href="#one">Projects</a></li>
-							<li><a href="#four">About</a></li>
-							<li><a href="#three">Get in touch</a></li>
+							<li><a href="#one">Snapshots</a></li>
+							<li><a href="#two">Projects</a></li>
+							<li><a href="#three">About</a></li>
+							<li><a href="#footer">Social</a></li>
 						</ul>
 					</nav>
 				</div>
 			</section>
 		
-		<!-- Wrapper -->
+		<!-- Intro -->
 			<div id="wrapper">
 
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<section id="title" class="wrapper style1">
 						<div class="inner">
-							<h1>Lewis Tansley</h1>
-							<p>A Comprehensive Portfolio of all of my current and ongoing projects.</p>
+							<h1 class="major">Lewis Tansley</h1>
+							<h2>A Comprehensive Portfolio of all of my current and ongoing projects.</h2>
+							<br></br>
 							<ul class="actions">
-								<li><a href="#four" class="button scrolly">Learn more</a></li>
+								<li><a href="blog" class="button scrolly">Blog</a></li>
 							</ul>
 						</div>
 						</section>
 					</section> 
 
 				<!-- Instagram Feed -->
-					<section id="two" class="wrapper style3 fade-up">
+					<section id="one" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>Development Snapshots</h2>
 							<p>A live view of current / ongoing developments.</p>
 							<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 							<div class="elfsight-app-cdee6edb-2ebe-4494-94df-f38d0e788938" data-position="center center"></div>
+							<p></p>
 							<ul class="actions">
 								<li><a href="https://www.instagram.com/litastudios/" frameborder=64px class="button">Visit Page</a></li>
 							</ul>
@@ -74,7 +64,7 @@
 					</section>
 
 		<!-- Projects -->
-		<section id="one" class="wrapper style2 spotlights">
+		<section id="two" class="wrapper style2 spotlights">
 				<section>
 					<a href="images/convergence.webp" class="image"><img src="images/convergence.webp" alt="" data-position="center center" /></a>
 					<div class="content">
@@ -113,84 +103,24 @@
 				</section>
 			</section>
 			<!--  About -->
-				<section id="four" class="wrapper style3 fade-up">
+				<section id="three" class="wrapper style3 fade-up">
 					<div class="inner">
-						<h2>About Me</h2>
+						
 						<div class="split style1">
-								<div class="field half">
 									<section>
+										<h1 class="major">About Me</h1>
 										<p>Hi, I am Lewis.</p>
-										<p>I have been active in software and video games development for over a decade.</p>
-										<p>I am an experienced Data Analyst with a demonstrated history of working in the information technology and services industry. Skilled in Service Delivery, Data Analysis, Real-time Data, Programming, and Service Delivery Management. Strong information technology professional with a bsc hons focused in games development and programming from Staffordshire University.</p>
+										<p>I have been active in software and video games development for over a decade. <br></br>I am an experienced Data Analyst with a demonstrated history of working in the information technology and services industry. Skilled in Service Delivery, Data Analysis, Real-time Data, Programming, and Service Delivery Management. Strong information technology professional with a bsc hons focused in games development and programming from Staffordshire University.</p>
 									</section>
-									
-								</div>
-								<div class="image">
 									<section>
-										<a id="meImg"><img src="images/me.webp" maxwidth=auto height=500px data-position="center center" /></a>
+										<div class="inner"><img class="image fit" src="images/me.jpg" /></img></div>
+										
 									</section>
 								</div>	
 						</div>
-					</div>
-				<!-- Contact -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Contact</h2>
-							<p>Feel free to get in contact using the links below:</p>
-							<div class="split style1">
-								<!--  <section>
-									<form method="get" action=mailto:lewistansley123@gmail.com enctype="text/plain">
-										<div class="fields">
-											<div class="field half">
-												<label for="subject">subject</label>
-												<input type="text" name="subject" id="subject" />
-											</div>
-											<div class="field">
-											 	<label for="comments">Message</label>
-												<textarea type="text" name="comments" id="comments" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="mailto:lewistansley123@gmail.com?subject=subject&body=comments" class="button submit">Open	</a></li>
-										</ul>
-									</form>
-								</section>  -->
-								<section>
-									<ul class="contact">
-										<!-- <li>
-											<h3>Email</h3>
-											<a href="#three">lewistansley123@gmail.com</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(+44) 7305156645</span>
-										</li> -->
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-												<li><a href="https://www.linkedin.com/in/lewis-tansley-861477194" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-												<li><a href="https://www.instagram.com/litastudios/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="https://github.com/lewistansley" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Lewis Tansley (2019). All rights reserved.</li> 
-						<!--  <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
-					</ul>
-				</div>
-			</footer>
+		<div id="footer"></div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -200,6 +130,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/cookieCatcher.js"></script>
+
 
 	</body>
 </html>

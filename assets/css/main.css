@@ -24,6 +24,8 @@ section, summary, time, mark, audio, video {
 	font-family: 'Courier New', Courier, monospace;
 }
 
+
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -192,7 +194,7 @@ input, select, textarea {
 	}
 
 		h1.major {
-			margin: 0 0 1.3em 0;
+			margin: 0 0 0.5em 0;
 			position: relative;
 			padding-bottom: 0.35em;
 		}
@@ -3215,6 +3217,10 @@ input, select, textarea {
 			}
 
 /* Wrapper */
+.make-it-fit {
+    max-width: 99%;
+    max-height: 99%;
+}
 
 	.wrapper {
 		position: relative;
@@ -3229,7 +3235,7 @@ input, select, textarea {
 			@media screen and (max-width: 1680px) {
 
 				.wrapper > .inner {
-					padding: 4em 4em 2em 4em ;
+					padding: 4em 4em 2em 4em;
 				}
 
 			}
@@ -3523,7 +3529,7 @@ input, select, textarea {
 /* Footer */
 
 	#sidebar + #wrapper + #footer {
-		margin-left: 18em;
+		margin-left: 12em;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3612,7 +3618,7 @@ input, select, textarea {
 				-webkit-transition: opacity 0.15s ease, -webkit-transform 0.75s ease;
 				-ms-transition: opacity 0.15s ease, -ms-transform 0.75s ease;
 				transition: opacity 0.15s ease, transform 0.75s ease;
-				margin: 1.5em 0 0 0;
+				margin: 2.0em 0 0 0;
 				opacity: 1;
 				padding: 0;
 				position: relative;
@@ -3840,7 +3846,7 @@ input, select, textarea {
 				overflow: hidden;
 				padding: 0;
 				text-align: center;
-				top: 3em;
+				top: 0em;
 				width: 100%;
 			}
 
@@ -3918,11 +3924,10 @@ input, select, textarea {
 
 	#introBlog {
 		background-attachment: fixed;
-		background:url(images/Keyboard.jpg);
+		background-image: url("images/Keyboard.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 1920px auto;	
-		/* filter:blur(8px); */ 
 		
 	}
 

@@ -7,27 +7,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="assets/js/jquery-3.4.1.js"></script>
+		<script> 
+			$(function(){
+			$("#footer").load("footer.html"); 
+			});
+		</script> 
+
 	</head>
 	<body class="is-preload">
 
-	<!-- Header -->
+	<!-- Header 
 	<header id="header">
 		<nav>
 			<ul>
 				<li><a href="/">Home</a></li>
-				<!-- <li><a href="inprogress">File Server</a></li>
-				<li><a href="inprogress">Forum</a></li> -->
+				 <li><a href="inprogress">File Server</a></li>
+				<li><a href="inprogress">Forum</a></li>
 				<li><a href="blog">Blog</a></li>
 			</ul>
 		</nav>
-	</header>
+	</header> -->
 
 			<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#header">Navigation</a></li>
+							<!-- <li><a href="#header">Navigation</a></li> -->
 							<li><a href="#introBlog">Intro</a></li>
 							<li><a href="#one">Week 1</a></li>
 							<li><a href="#two">Week 2</a></li>
@@ -38,7 +45,7 @@
 				</div>
 			</section>
 
-		<!-- Wrapper -->
+		<!-- Intro -->
 			<div id="wrapper">
 
 				<!-- Main -->
@@ -47,39 +54,53 @@
 						<div class="inner">
 							<h1 class="major">A guide to Games Engine Development - C++</h1>
 							<h2>My Personal descent in to madness.</h2>
+							<br></br>
+							<ul class="actions">
+								<li><a href="index" class="button scrolly">Home</a></li>
+							</ul>
 							</div>
 						</section>
 					</section>
 
 					<!-- Post 1 -->
-					<section id="one" class="wrapper">
+					<section id="one" class="wrapper style3">
 						<div class="inner">
-							<h3>My First week</h3>
+							<div class="wrapper style1">
+								<div class="inner">
+							<h1 class="major">My First week</h1>
 							<p>So, it is the start of my first semester of my first academic year. Our first task for games engine development - Hello World, Simple.</p>
 							<p>So I boot up Visual Studio 2019, Create helloWorld.cpp and include the below:</p>
 							<span class="image fit"><img src="images/blogCaps/helloWorld.PNG" alt="" /></span>
 							<p>Next I hit run and...</p>
 							<span class="image fit"><img src="images/blogCaps/helloWorldCMD.PNG" alt="" /></span>
 							<p>Breathtaking. Might reinvent BASIC tomorrow I dunno.</p>
+								</div>
+							</div>
 						</div>
 					</section>
 
 					<!-- Post 2 -->
-					<section id="two" class="wrapper">
+					<section id="two" class="wrapper style3">
 						<div class="inner">
-							<h3>Week 2</h3>
+							<div class="wrapper style2 alt split">
+								<div class="inner">
+							<h1 class="major">Week 2</h1>
 							<p>Another pretty simple project, 8 lines that get the values of different forms of variables.</p>
 							<span class="image fit"><img src="images/blogCaps/DataTypeSize.PNG" alt="" /></span>
 							<p>Output:</p>
 							<span class="image fit"><img src="images/blogCaps/DataTypeSizeCMD.PNG" alt="" /></span>
 							<p>So off the rails might need Sharon Osbourne to look after me tomorrow I dunno.</p>
 						</div>
+					</div>
+				</div>
 					</section>
 
 					<!-- Post 3 -->
-					<section id="three" class="wrapper">
+					<section id="three" class="wrapper style3">
 						<div class="inner">
-							<h3>Week 3</h3>
+								<div class="wrapper style1">
+										<div class="inner">
+							<h1 class="major">Week 3</h1>
 							<p>Now, lets bash out some variables.</p>
 							<span class="image fit"><img src="images/blogCaps/DefiningVariables.PNG" alt="" /></span>
 							<p>Output: Take a guess.</p>
@@ -89,18 +110,22 @@
 							<p>At least the output doesn't hurt my head.</p> -->
 							<p>Ouput:</p>
 							<span class="image fit"><img src="images/blogCaps/IncrementDecrementOperatorsCMD.PNG" alt="" /></span>
-
-
+						</div>
+						</div>
 						</div>
 					</section>
 
 					<!-- Post 4 -->
-					<section id="four" class="wrapper">
+					<section id="four" class="wrapper style3">
 						<div class="inner">
-							<h3>Week 4</h3>
+								<div class="wrapper style1">
+										<div class="inner">
+							<h1 class="major">Week 4</h1>
 							<p>So, if the previous three weeks made you realise I might be the next Bill Gates then uh oh because the first time I looked at this week's assignment I nearly cried, then decided I had better things to do like eat an entire tub of ice cream. RIP all programming skill I thought I had.</p>
 							<!-- <span class="image fit"><img src="images/" alt="" /></span> -->
 						</div>
+					</div>
+				</div>
 					</section> 
 					
 					<!-- Post  
@@ -117,13 +142,7 @@
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Lewis Tansley (2019). All rights reserved.</li> 
-					</ul>
-				</div>
-			</footer>
+		<div id="footer"></div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
