@@ -42,7 +42,7 @@ $(function() {
         if($(this).val().substring(0) === 'run'){
 
             if(pathText === 'MAINFRAME:\\\\SUPERUSER\\D\\21031984\\N\\01.img'){
-            window.open("D21031984N01");
+            window.open("fullscreenImages//D21031984N01");
             }
 
             valFunc = 1;
