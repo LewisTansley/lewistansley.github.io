@@ -78,6 +78,9 @@ $(function() {
           document.getElementById("history").innerHTML = "";
       }
 
+      else {
+        $('#history').append('UNKNOWN COMMAND'+'<br/>');
+      }
       // clear the input
       $('#input').val('');
       
