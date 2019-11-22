@@ -33,7 +33,7 @@ img{
     color:white;
     font-family: "consolas";
     text-shadow: 0 0 4px white;
-    font-size: 18px;
+    font-size: 22px;
 
   }
   
@@ -44,7 +44,7 @@ img{
     text-shadow: 0 0 4px white;
     display: table;
     width: 100%;
-    font-size: 18px;
+    font-size: 22px;
   }
   
   .terminal span{
@@ -54,6 +54,8 @@ img{
     text-shadow: 0 0 4px white;
     display:table-cell; 
     width:1px;
+    font-size: 22px;
+
   }
   
   .terminal input{
@@ -67,7 +69,7 @@ img{
     background: black;
     color: white;
     outline: none;
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .faux{
@@ -82,7 +84,7 @@ img{
     color:white;
     font-family: "consolas";
     text-shadow: 0 0 4px white;
-    font-size: 18px;
+    font-size: 22px;
 
   }
   pre{
