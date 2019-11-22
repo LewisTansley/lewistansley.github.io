@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/terminal.css">
+
+
+</head>
+<body>
+
+<div class="faux">
+<pre>                                                                                     
+    //   ) )  //   / / //   ) ) //   / /  //   ) )  //   / / //   ) )  //   / /  //   ) ) 
+   ((        //   / / //___/ / //____    //___/ /  //   / / ((        //____    //___/ /  
+     \\     //   / / / ____ / / ____    / ___ (   //   / /    \\     / ____    / ___ (    
+       ) ) //   / / //       //        //   | |  //   / /       ) ) //        //   | |    
+((___ / / ((___/ / //       //____/ / //    | | ((___/ / ((___ / / //____/ / //    | |  
+</pre>
+  <div class="bumf">
+  <p>SUPERFRAME [Version id 2.6.8.2345.12</p>
+  <p>(c) 1984 UNSD. All rights reserved.</p>
+  </div> 
+</div>
+
+<div class="terminal">
+  <div class="overlay">
+    <img src="images/SL.png">
+  </div>
+  <div id="history"></div>
+  <div class="line">
+    <span id="path">MAINFRAME:\\ADMINISTRATOR&nbsp;>&nbsp;</span>
+    <input type="text" id="input">
+    </line>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+$(function() {
+
+  // console.log(span_Text)
+
+	$('.terminal').on('click', function(){
+  	 $('#input').focus();
+  });
+
+  $('#input').on('keydown',function search(e) {
+		if(e.keyCode == 13) {
+
+      // Get path
+      var span_Text = document.getElementById("path").innerText;
+
+    	// append your output to the history,
+      // here I just append the input
+    	$('#history').append(span_Text+$(this).val()+'<br/>');
+      
+      // you can change the path if you want
+      // crappy implementation here, but you get the idea
+      if($(this).val().substring(0, 3) === 'cd '){
+        $('#path').html('MAINFRAME:\\\\ADMINISTRATOR\\'+$(this).val().substring(3)+'&nbsp;>&nbsp;');
+
+      }
+      
+      // clear the input
+      $('#input').val('');
+      
+    }
+  });
+});
+
+</script>
+
+</body>

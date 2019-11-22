@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CodePen - HTML5 Web Terminal</title>
+        <link rel="stylesheet" href="assets/css/newTerminal.css">
+        <script>
+            window.console = window.console || function(t) {};
+        </script>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+            }
+        </script>
+    </head>
+    <body translate="no">
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+            <title>HTML5 Web Terminal</title>
+            <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css" />
+        </head>
+    <body>
+        <div id="container">
+            <output></output>
+            <div id="input-line" class="input-line">
+                <div class="prompt"></div>
+            <div>
+                <input class="cmdline" autofocus />
+            </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://s.codepen.io/AndrewBarfield/pen/LEbPJx.js"></script>
+        </div>
+    </body>
+    </html>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+<script id="rendered-js">
+      $(function () {
+
+  // Set the command-line prompt to include the user's IP Address
+  //$('.prompt').html('[' + codehelper_ip["IP"] + '@HTML5] # ');
+  $('.prompt').html('[user@HTML5] # ');
+
+  // Initialize a new terminal object
+  var term = new Terminal('#input-line .cmdline', '#container output');
+  term.init();
+
+});
+      //# sourceURL=pen.js
+    </script>
+</body>
+</html>

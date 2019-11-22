@@ -1,0 +1,105 @@
+body{
+
+    background-color: black;
+    margin: 0px;
+
+}
+
+.overlay{
+  
+  position: fixed; /* Sit on top of the page content */
+  /* display: none;  Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity:0.5;
+
+}
+.terminal{
+    background: black;
+    color: white;
+    padding: 10px;
+    height: 100px;
+    /* overflow: hidden;*/
+    background-color: black;
+    color:white;
+    font-family: "consolas";
+    text-shadow: 0 0 4px white;
+    font-size: 18px;
+
+  }
+  
+  .line{
+    background-color: black;
+    color:white;
+    font-family: "consolas";
+    text-shadow: 0 0 4px white;
+    display: table;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .terminal span{
+    background-color: black;
+    color:white;
+    font-family: "consolas";
+    text-shadow: 0 0 4px white;
+    display:table-cell; 
+    width:1px;
+  }
+  
+  .terminal input{
+    background-color: black;
+    color:white;
+    font-family: "consolas";
+    text-shadow: 0 0 4px white;
+    display:table-cell; 
+    width:100%;
+    border: none;
+    background: black;
+    color: white;
+    outline: none;
+    font-size: 18px;
+  }
+
+  .faux{
+
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    /* overflow: hidden;*/
+    background-color: black;
+    color:white;
+    font-family: "consolas";
+    text-shadow: 0 0 4px white;
+    font-size: 18px;
+
+  }
+  pre{
+
+    /* white-space: nowrap; */
+    width:100%;
+    animation: typing 2s steps(21, end);
+    overflow: hidden;
+
+  }
+
+  @keyframes typing {
+
+    from{
+
+        width:0;
+
+    }
+
+}
+.bumf{
+
+
+  
+}
