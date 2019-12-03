@@ -15,7 +15,14 @@
                 </ul>
             </section>
             <section>
-                <p>© Lewis Tansley (2019). All rights reserved.</p>
+                    <script>
+                        function myFunction() {
+                            var d = new Date();
+                            var n = d.getFullYear();
+                            document.getElementById("cRightDate").innerHTML = n;
+                        }
+                    </script>
+                <p>© Lewis Tansley (</p><p class="cRightDate"></p><p>). All rights reserved.</p>
                 <p>Powered by <a href="terminal">SUPERFRAME</a></p>
             </section>
         </div>
