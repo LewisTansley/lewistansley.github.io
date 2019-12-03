@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<head><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script></head>
+
 <footer id="footer" class="wrapper style1">
     <div class="inner">
         <div class="wrapper style1 split"  >
@@ -19,10 +21,10 @@
                         function myFunction() {
                             var d = new Date();
                             var n = d.getFullYear();
-                            document.getElementById("cRightDate").innerHTML = n;
+                            document.getElementById("cRightDate").innerHTML = '© Lewis Tansley (' + n + '). All rights reserved.';
                         }
                     </script>
-                <p>© Lewis Tansley (</p><p class="cRightDate"></p><p>). All rights reserved.</p>
+                <p id="cRightDate"></p>
                 <p>Powered by <a href="terminal">SUPERFRAME</a></p>
             </section>
         </div>
