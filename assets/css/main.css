@@ -2606,7 +2606,11 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			padding:8px;
+			/* padding:8px; 
+			position: absolute;*/
+  			top: 50%;
+  			-ms-transform: translateY(50%);
+  			transform: translateY(50%);
 			margin-left: auto;
 			margin-right: auto;
 			width: 75%;
