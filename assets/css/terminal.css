@@ -34,7 +34,7 @@ img{
     color:white;
     font-family: "consolas";
     text-shadow: 0 0 4px white;
-    font-size: 22px;
+    font-size: 16px;
 
   }
   
@@ -45,7 +45,7 @@ img{
     text-shadow: 0 0 4px white;
     display: table;
     width: 100%;
-    font-size: 22px;
+    font-size: 16px;
   }
   
   .terminal span{
@@ -55,7 +55,7 @@ img{
     text-shadow: 0 0 4px white;
     display:table-cell; 
     width:1px;
-    font-size: 22px;
+    font-size: 16px;
 
   }
   
@@ -70,7 +70,7 @@ img{
     background: black;
     color: white;
     outline: none;
-    font-size: 22px;
+    font-size:16px;
   }
 
   .faux{
@@ -85,7 +85,7 @@ img{
     color:white;
     font-family: "consolas";
     text-shadow: 0 0 4px white;
-    font-size: 22px;
+    font-size: 16px;
 
   }
   pre{
