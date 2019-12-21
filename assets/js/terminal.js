@@ -19,27 +19,27 @@ $(function() {
   
           $('#history').append(pathText+pointerText+$(this).val()+'<br/>'); // append history
         
-        if($(this).val().substring(0, 3) === 'cd '){
+        if($(this).val().substring(0, 3) === 'CD '){
           $('#path').html(pathText+'\\'+$(this).val().substring(3)); // change path
           valFunc = 1;
         }
   
-        if($(this).val().substring(0) === 'root'){ 
+        if($(this).val().substring(0) === 'ROOT'){ 
           $('#path').html('MAINFRAME:\\\\SUPERUSER'); // go to root
           valFunc = 1;
         }
         
-        if($(this).val().substring(0) === 'clear'){
+        if($(this).val().substring(0) === 'CLEARFRAME'){
             document.getElementById("history").innerHTML = "";
             valFunc = 1;
         }
 
-        if($(this).val().substring(0) === 'exit'){
+        if($(this).val().substring(0) === 'EXIT'){
             location.replace("\\");
             valFunc = 1;
         }
 
-        if($(this).val().substring(0) === 'run'){
+        if($(this).val().substring(0) === 'RUN'){
 
             if(pathText === 'MAINFRAME:\\\\SUPERUSER\\D\\21031984\\N\\01.img'){
             window.open("fullscreenImages/D21031984N01");
