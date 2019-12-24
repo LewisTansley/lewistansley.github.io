@@ -3964,3 +3964,10 @@ input, select, textarea {
 			}
 
 		}
+#LTLogo{
+	display: inline-block;
+	margin-top: 16px;
+	max-width: 128px;
+	max-height: 128px;
+
+}
