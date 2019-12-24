@@ -3429,9 +3429,11 @@ input, select, textarea {
 					#header > nav > ul > li:first-child {
 						margin-left: 0;
 					}
+
 					#header > nav > ul > li:last-child{
 						float:right;
 					}
+					
 					#header > nav > ul > li a {
 						border: 0;
 						color:#3c2c62;	
