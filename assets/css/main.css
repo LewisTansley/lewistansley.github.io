@@ -3431,9 +3431,9 @@ input, select, textarea {
 					}
 
 					#header > nav > ul > li:last-child{
-						float:right;
+						float:right middle;
 					}
-					
+
 					#header > nav > ul > li a {
 						border: 0;
 						color:#3c2c62;	
