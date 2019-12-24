@@ -3411,7 +3411,7 @@ input, select, textarea {
 			-webkit-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
-			text-align: right;
+
 		}
 
 			#header > nav > ul {
@@ -3431,7 +3431,7 @@ input, select, textarea {
 					}
 
 					#header > nav > ul > li:last-child{
-						float:right middle;
+						float:right;
 					}
 
 					#header > nav > ul > li a {
