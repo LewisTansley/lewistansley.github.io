@@ -3411,12 +3411,13 @@ input, select, textarea {
 			-webkit-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
-
+			text-align: right;
 		}
 
 			#header > nav > ul {
 				margin: 0;
 				padding: 0;
+				padding-bottom: 0.3em;
 			}
 
 				#header > nav > ul > li {
@@ -3424,7 +3425,6 @@ input, select, textarea {
 					margin-left: 1.75em;
 					padding: 0;
 					vertical-align: middle;
-					float:right;
 				}
 
 					#header > nav > ul > li:first-child {
@@ -3968,32 +3968,9 @@ input, select, textarea {
 
 
 #LTLogo{
+
 	display: inline-block;
-	margin-top: 12px;
 	max-width: 48px;
 	max-height: 48px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
