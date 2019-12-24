@@ -3424,14 +3424,11 @@ input, select, textarea {
 					margin-left: 1.75em;
 					padding: 0;
 					vertical-align: middle;
+					float:right;
 				}
 
 					#header > nav > ul > li:first-child {
 						margin-left: 0;
-					}
-
-					#header > nav > ul > li:last-child{
-						float:right;
 					}
 
 					#header > nav > ul > li a {
