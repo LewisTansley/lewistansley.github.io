@@ -4051,13 +4051,13 @@ input, select, textarea {
 
 			#sidebar {
 				height: 100vh;
-				left: 0.5em;
+				left: 0;
 				line-height: 3.5em;
 				overflow: hidden;
 				padding: 0;
 				text-align: center;
 				top: 0em;
-				width: 5em;
+				width: 6em;
 			}
 
 				#sidebar > .inner {
