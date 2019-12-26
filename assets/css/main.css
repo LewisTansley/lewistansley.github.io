@@ -3455,8 +3455,11 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				padding: 1em 2em;
-			}
+				display: inherit;
+				background-color: #181818;
+				cursor: default;
+				padding: 0.25em 1.0em;
+				text-align: right;			}
 
 		}
 
@@ -4317,5 +4320,6 @@ input, select, textarea {
 	display: inline-block;
 	max-width: 48px;
 	max-height: 48px;
+	padding-top: 0.5em;
 
 }
