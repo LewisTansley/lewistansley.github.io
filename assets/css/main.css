@@ -3395,7 +3395,7 @@ input, select, textarea {
 		display: flex;
 		background-color: #181818;
 		cursor: default;
-		padding: 0.25em 2.0em;
+		padding: 0.25em 1.0em;
 		text-align: right;
 	}
 
@@ -3423,7 +3423,7 @@ input, select, textarea {
 
 				#header > nav > ul > li {
 					display: inline-block;
-					margin-left: 0.75em;
+					margin-left: 0.25em;
 					padding: 0;
 					vertical-align: middle;
 				}
@@ -3434,7 +3434,7 @@ input, select, textarea {
 
 					#header > nav > ul > li a {
 						border: 0;
-						color:#3c2c62;	
+						color: #ffffff;
 						opacity: 1.00;
 						display: inline-block;
 						font-size: 0.6em;
@@ -3444,12 +3444,12 @@ input, select, textarea {
 					}
 
 						#header > nav > ul > li a:hover {
-							color:#ffffff;
+							color:#3c2c62;
 							opacity: 1.00;
 						}
 
 						#header > nav > ul > li a.active {
-							color: #ffffff;
+							color:#3c2c62;
 						}
 
 		@media screen and (max-width: 736px) {
