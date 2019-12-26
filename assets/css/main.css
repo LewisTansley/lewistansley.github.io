@@ -3423,7 +3423,7 @@ input, select, textarea {
 
 				#header > nav > ul > li {
 					display: inline-block;
-					margin-left: 0.5em;
+					margin-left: 0.75em;
 					padding: 0;
 					vertical-align: middle;
 				}
