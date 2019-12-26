@@ -3463,7 +3463,7 @@ input, select, textarea {
 
 			#header {
 				display: block;
-				padding: 0 2em;
+				padding: 0 0.5em;
 				text-align: left;
 			}
 
