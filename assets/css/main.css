@@ -3508,6 +3508,8 @@ input, select, textarea {
 
 			#sidebar + #wrapper {
 				padding-top: 0;
+				margin-left: 0;
+
 			}
 
 		}
@@ -4057,7 +4059,7 @@ input, select, textarea {
 				padding: 0;
 				text-align: center;
 				top: 0em;
-				width: 6em;
+				width: 0em;
 			}
 
 				#sidebar > .inner {
