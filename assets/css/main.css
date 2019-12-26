@@ -3392,7 +3392,7 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: inline-block;
 		background-color: #181818;
 		cursor: default;
 		padding: 0.25em 1.0em;
@@ -3423,7 +3423,7 @@ input, select, textarea {
 
 				#header > nav > ul > li {
 					display: inline-block;
-					margin-left: 0.25em;
+					margin-left: 0.5em;
 					padding: 0;
 					vertical-align: middle;
 				}
@@ -3479,7 +3479,7 @@ input, select, textarea {
 				}
 
 					#header > nav > ul > li {
-						margin-left: 1.5em;
+						margin-left: 0;
 					}
 
 						#header > nav > ul > li a {
@@ -3520,7 +3520,7 @@ input, select, textarea {
 		overflow: hidden;
  		/* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
   		padding-top: 56.25%;
-		  position: relative;
+		position: relative;
 	}
 	.wrapper > .inner > .iframe iframe{
 		border: 0;
