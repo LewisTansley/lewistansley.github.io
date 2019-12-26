@@ -3396,6 +3396,7 @@ input, select, textarea {
 		background-color: #181818;
 		cursor: default;
 		padding: 0.25em 2.0em;
+		text-align: right;
 	}
 
 		#header > .title {
@@ -3411,7 +3412,7 @@ input, select, textarea {
 			-webkit-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
-			text-align: right;
+			text-align: inherit;
 		}
 
 			#header > nav > ul {
@@ -3422,7 +3423,7 @@ input, select, textarea {
 
 				#header > nav > ul > li {
 					display: inline-block;
-					margin-left: 1.75em;
+					margin-left: 0.75em;
 					padding: 0;
 					vertical-align: middle;
 				}
@@ -3464,7 +3465,7 @@ input, select, textarea {
 			#header {
 				display: block;
 				padding: 0 0.5em;
-				text-align: left;
+				text-align: right;
 			}
 
 				#header .title {
