@@ -3444,12 +3444,12 @@ input, select, textarea {
 					}
 
 						#header > nav > ul > li a:hover {
-							color:#3c2c62;
+							color: rgb(182, 102, 255);
 							opacity: 1.00;
 						}
 
 						#header > nav > ul > li a.active {
-							color:#3c2c62;
+							color: rgb(182, 102, 255);
 						}
 
 		@media screen and (max-width: 736px) {
