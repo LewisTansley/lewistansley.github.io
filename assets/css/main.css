@@ -3426,6 +3426,7 @@ input, select, textarea {
 					margin-left: 0.75em;
 					padding: 0;
 					vertical-align: middle;
+					padding-left: 0.5em;
 				}
 
 					#header > nav > ul > li:first-child {
@@ -3483,6 +3484,7 @@ input, select, textarea {
 
 					#header > nav > ul > li {
 						margin-left: 0;
+						padding-left: 0.5em;
 					}
 
 						#header > nav > ul > li a {
