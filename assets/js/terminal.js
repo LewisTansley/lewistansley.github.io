@@ -1,4 +1,3 @@
-
 $(function() {
 
     // console.log(span_Text)
@@ -14,9 +13,8 @@ $(function() {
         var pointerText = document.getElementById("pointer").innerText; // Get pointer
         console.log(pathText+' '+pointerText);
 
-
         valFunc = null;
-        viewportEnabled = false;
+        
   
           $('#history').append(pathText+pointerText+$(this).val()+'<br/>'); // append history
         
@@ -40,24 +38,33 @@ $(function() {
             valFunc = 1;
         }
 
-        if($(this).val().substring(0) === 'VIEW' && viewportEnabled === true){
-
-            if(pathText === 'MAINFRAME:\\\\SUPERUSER\\D\\21031984\\N\\01.img'){
-            }
-            $('#textContainer').val('D\\21031984\\N\\01.img');
-            $('#imgContainer').val('<img id="imgContainer" src="fullscreenImages/images/BG.png" class="center">');
-            valFunc = 1;
-        }
         if($(this).val().substring(0) === 'ENABLE VIEWPORT'){
           
-          $(function(){
-            $("#viewport").load("viewport.html");
-          });
+          /* $(function(){
+             $("#viewport").load("viewport.html");
+           });*/
+ 
+           $('#history').append('VIEWPORT SUCCESSFULLY ENABLED'+'<br/>');
+           valFunc = 1;
+           $('#viewportBool').html('TRUE');
+         }
 
-          $('#history').append('VIEWPORT SUCCESSFULLY ENABLED'+'<br/>');
-          valFunc = 1;
-          viewportEnabled = true;
+        if($(this).val().substring(0) === 'VIEW' && document.getElementById("viewportBool").innerHTML === 'TRUE'){
+
+            if(pathText === 'MAINFRAME:\\\\SUPERUSER\\D\\21031984\\N\\01.img'){
+              $('#imgContainer').html('<img src=\"fullscreenImages/images/BG.png\" class=\"center\">');  
+              $('#textContainer').html('<p>D\\21031984\\N\\01.img</p>');  
+
+            }
+
+            if(pathText === 'MAINFRAME:\\\\SUPERUSER\\me.img'){
+              $('#imgContainer').html('<video width="640" height="480" autoplay><source src="me.mp4" type="video/mp4"></video>');  
+              $('#textContainer').html('<p>me.img</p>');  
+
+            }
+            valFunc = 1;
         }
+
   
         if(valFunc !== 1) {
           $('#history').append('UNKNOWN COMMAND'+'<br/>');

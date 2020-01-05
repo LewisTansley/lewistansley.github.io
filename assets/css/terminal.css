@@ -2,8 +2,6 @@ body{
 
     background-color: black;
     margin: 0px;
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
 
 }
 img{
@@ -30,7 +28,7 @@ img{
     background: black;
     color: white;
     padding: 10px;
-    height: 100px;
+    height: 480PX;
     /* overflow: hidden;*/
     background-color: black;
     color:white;
@@ -152,4 +150,12 @@ img{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+#imgContainer{
+
+  border-style: DASHED;
+  border-width: 5px;
+  border-color: white;
+
+
 }
