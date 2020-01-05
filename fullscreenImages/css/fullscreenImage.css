@@ -28,10 +28,14 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
     color:white;
     font-family: "consolas";
     text-shadow: 0 0 4px white;
     font-size: 22px;
+
+}
+#vidMe{
+
+  margin-left: 10%;
 
 }

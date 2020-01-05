@@ -57,7 +57,7 @@ $(function() {
             }
 
             if(pathText === 'MAINFRAME:\\\\SUPERUSER\\me.img'){
-              $('#imgContainer').html('<video width="640" height="480" autoplay><source src="me.mp4" type="video/mp4"></video>');  
+              $('#imgContainer').html('<video class="vidMe" width="640" height="480" autoplay><source src="me.mp4" type="video/mp4"></video>');  
               $('#textContainer').html('<p>me.img</p>');  
 
             }
