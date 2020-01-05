@@ -11,9 +11,9 @@
 		<script src="assets/js/jquery-3.4.1.js"></script>
 		<script> 
 			$(function(){
-			$("#footerContainer").load("footer.html"); 
-			$("#headerContainer").load("header.html"); 
-			$("#yyyy").html(getFullYear()); 
+				$("#footerContainer").load("footer.html"); 
+				$("#headerContainer").load("header.html"); 
+				document.getElementById("year").innerHTML = new Date().getFullYear();
 			});
 		</script> 
 
