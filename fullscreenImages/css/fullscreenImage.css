@@ -4,13 +4,13 @@ body{
     margin: 0px;
 
 }
-.overlay{
+.overlay2{
   
     position: fixed;
-    width: 100%;
+    width: 50%;
     height: 100%;
     top: 0;
-    left: 0;
+    left: 70%;
     right: 0;
     bottom: 0;
     opacity:0.5;
@@ -33,6 +33,5 @@ body{
     font-family: "consolas";
     text-shadow: 0 0 4px white;
     font-size: 22px;
-
 
 }

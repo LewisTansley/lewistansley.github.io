@@ -16,6 +16,7 @@ $(function() {
 
 
         valFunc = null;
+        viewportEnabled = false;
   
           $('#history').append(pathText+pointerText+$(this).val()+'<br/>'); // append history
         
@@ -39,13 +40,23 @@ $(function() {
             valFunc = 1;
         }
 
-        if($(this).val().substring(0) === 'RUN'){
+        if($(this).val().substring(0) === 'VIEW' && viewportEnabled === true){
 
             if(pathText === 'MAINFRAME:\\\\SUPERUSER\\D\\21031984\\N\\01.img'){
-            window.open("fullscreenImages/D21031984N01");
             }
-
+            $('#textContainer').val('D\\21031984\\N\\01.img');
+            $('#imgContainer').val('<img id="imgContainer" src="fullscreenImages/images/BG.png" class="center">');
             valFunc = 1;
+        }
+        if($(this).val().substring(0) === 'ENABLE VIEWPORT'){
+          
+          $(function(){
+            $("#viewport").load("viewport.html");
+          });
+
+          $('#history').append('VIEWPORT SUCCESSFULLY ENABLED'+'<br/>');
+          valFunc = 1;
+          viewportEnabled = true;
         }
   
         if(valFunc !== 1) {
@@ -53,7 +64,8 @@ $(function() {
         }
   
         $('#input').val(''); // clear the input
-        
+        var objDiv = document.getElementById("Scroller");
+        objDiv.scrollTop = objDiv.scrollHeight;
       }
     });
   });

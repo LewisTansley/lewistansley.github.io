@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 
 <head>
+
   <title>Terminal</title>
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="assets/css/terminal.css">
+  <link rel="stylesheet" href="fullscreenImages/css/fullscreenImage.css">
+
 
 </head>
 <body>
 
-    <audio autoplay>
-        <source src="assets/audio/Boot2.wav" type="audio/wav">
-        <source src="assets/audio/Boot.wav" type="audio/wav">
-    </audio>
+  <audio autoplay>
+      <source src="assets/audio/Boot2.wav" type="audio/wav">
+      <source src="assets/audio/Boot.wav" type="audio/wav">
+  </audio>
+  <div class="split style1">
+    <section id="Scroller" style="overflow-y: scroll; height:150%;">
+      <div class="faux">
 
-<div class="faux">
+        <pre>                                                                                     
+            ____ __  __ ___   ____ ___    ____ ___   ___    __  ___ ____
+            / __// / / // _ \ / __// _ \  / __// _ \ / _ |  /  |/  // __/
+          _\ \ / /_/ // ___// _/ / , _/ / _/ / , _// __ | / /|_/ // _/  
+          /___/ \____//_/   /___//_/|_| /_/  /_/|_|/_/ |_|/_/  /_//___/  
 
-<pre>                                                                                     
-     ____ __  __ ___   ____ ___    ____ ___   ___    __  ___ ____
-    / __// / / // _ \ / __// _ \  / __// _ \ / _ |  /  |/  // __/
-   _\ \ / /_/ // ___// _/ / , _/ / _/ / , _// __ | / /|_/ // _/  
-  /___/ \____//_/   /___//_/|_| /_/  /_/|_|/_/ |_|/_/  /_//___/  
+        </pre>
 
-</pre>
-  <div class="bumf">
-  <p>SUPERFRAME [Version id 2.6.8.2345.24]</p>
-  <p>(c) 1984 UNSD. All rights reserved.</p>
-  </div> 
-</div>
+        <div class="bumf">
 
-<div class="terminal">
-  <div class="overlay">
-    <img src="images/SL.png">
+          <p>SUPERFRAME [Version id 2.6.8.2345.24]</p>
+          <p>(c) 1984 UNSD. All rights reserved.</p>
+
+        </div> 
+
+      </div>
+
+      <div class="terminal">
+
+        <div class="overlay">
+          <img src="images/SL.png">
+        </div>
+
+        <div id="history"></div>
+
+        <div class="line">
+          <span id="path">MAINFRAME:\\SUPERUSER</span><span id="pointer">&nbsp;>&nbsp;</span>
+          
+          <input type="text" id="input">
+          </line>
+        </div>
+
+      </div>
+    </section>
+    <section id="viewport">
+
+    </section>
   </div>
-  <div id="history"></div>
-  <div class="line">
-    <span id="path">MAINFRAME:\\SUPERUSER</span><span id="pointer">&nbsp;>&nbsp;</span>
-    
-    <input type="text" id="input">
-    </line>
-  </div>
-</div>
 
-<script src="assets/js/terminal.js "type="text/javascript"></script>
+  <script src="assets/js/terminal.js "type="text/javascript"></script>
 
 </body>

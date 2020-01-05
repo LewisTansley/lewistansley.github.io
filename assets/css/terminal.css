@@ -2,6 +2,8 @@ body{
 
     background-color: black;
     margin: 0px;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
 
 }
 img{
@@ -15,7 +17,7 @@ img{
   
   position: fixed; /* Sit on top of the page content */
   /* display: none;  Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
+  width: 60%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
   top: 0;
   left: 0;
@@ -105,4 +107,49 @@ img{
 
     }
 
+}
+.split {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+  .split > * {
+    width: calc(50% - 2.5em);
+  }
+
+  .split > :nth-child(2n - 1) {
+    padding-right: 2.5em;
+  }
+
+  .split > :nth-child(2n) {
+    padding-left: 2.5em;
+  }
+
+  .split.style1 > :nth-child(2n - 1) {
+    width: calc(66.66666% - 2.5em);
+  }
+
+  .split.style1 > :nth-child(2n) {
+    width: calc(33.33333% - 2.5em);
+  }
+  /* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
