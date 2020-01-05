@@ -40,13 +40,12 @@ $(function() {
 
         if($(this).val().substring(0) === 'ENABLE VIEWPORT'){
           
-          /* $(function(){
+           $(function(){
              $("#viewport").load("viewport.html");
-           });*/
- 
+           });
+           $('#viewportBool').html('TRUE');
            $('#history').append('VIEWPORT SUCCESSFULLY ENABLED'+'<br/>');
            valFunc = 1;
-           $('#viewportBool').html('TRUE');
          }
 
         if($(this).val().substring(0) === 'VIEW' && document.getElementById("viewportBool").innerHTML === 'TRUE'){
