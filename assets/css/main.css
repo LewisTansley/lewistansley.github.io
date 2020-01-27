@@ -589,3 +589,43 @@ ul.icons {
     padding-right: 1em;
 
 }
+.fa{
+    margin-right: 10px;
+}
+.fas{
+  margin-right: 10px;
+}
+.fas::before{
+
+  border-bottom:none;
+
+}
+.bgDimmer{
+
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #404040aa; /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+
+}
+a {
+    -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    border-bottom: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+    a:hover {
+        border-bottom-color: transparent;
+        color: #404040aa;
+    }
