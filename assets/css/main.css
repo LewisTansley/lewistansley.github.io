@@ -458,38 +458,46 @@ ul.icons {
 }
 .header{
 
-    list-style: none;
-    border-radius: 40px;
+    border-radius: 10px;
+
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: inherit;
+    cursor: default;
     margin: 1em;
-    background-color:#DFDFDF;
-    box-shadow: 6px 6px 16px rgb(163,177,198,0.6), -6px -6px 16px  rgba(255,255,255, 0.6);
-
-
-}
-.headerStyle > nav{
-
-    padding: 0.5em;
-
-}
-.headerStyle > nav > ul{
-
-    list-style: none;
-    padding: 1em;
+    padding: 0.25em 1.0em;
     text-align: right;
+    border-radius:70px;
+    background-color:#dfdfdf;
+    box-shadow: 9px 9px 16px rgba(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.6);
 
 }
-.headerStyle > nav > ul > li{
+
+
+.header nav{
+
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: inherit;
+
+}
+.header nav > ul{
+
+    margin: 0;
+    padding: 0;
+   
+
+}
+.header nav > ul > li{
 
     display: inline-block;
-    list-style: none;
-    margin-right: 1em;
-
-}
-.headerStyle > nav > ul > li > a{
-
-    color: #404040;
-    font-family: monospace;
-    font-size: 12pt;
+    padding: 0;
+    vertical-align: middle;
+    padding-left: 0.5em;
+    color:#404040;
 
 }
 /* sidebar */
