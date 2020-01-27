@@ -63,12 +63,12 @@
                 if($('#sidebar').length > 0){
                     document.getElementById("sidebarContainer").innerHTML = "";
                     document.getElementById("sidebarContainer").style.display = "none";
-                    document.getElementById("sidebarContainer").onclick.display = "none";
                     console.log("if")
                 }
                 else{
                     $("#sidebarContainer").load("sidebar.html"); 
                     document.getElementById("sidebarContainer").style.display = "block";
+                    document.getElementById("sidebarContainer").onclick = '';
                     console.log("else")
                 }
             };
