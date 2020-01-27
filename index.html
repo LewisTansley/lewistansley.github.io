@@ -1,139 +1,128 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Home</title>
-		<meta charset="utf-8" />
-		<meta name="Description" content="My personal development portfolio."/>
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=5" />
-		<link rel="stylesheet" href="assets/css/main.css"/>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="assets/js/jquery-3.4.1.js"></script>
-		<script src="assets/js/lazysizes.min.js" async></script>
-		<script data-ad-client="ca-pub-4194300092004125" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<script> 
-			$(function(){
-				$("#footerContainer").load("footer.html"); 
-				$("#headerContainer").load("header.html"); 
-			});
-		</script> 
 
-	</head>
-	<body class="is-preload">
-		
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Intro</a></li>
-							<li><a href="#one">Snapshots</a></li>
-							<li><a href="#two">Projects</a></li>
-							<li><a href="#three">About</a></li>
-							<li><a href="#footer">Social</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
-		
-		<!-- Intro -->
-			<div id="wrapper">
-				<header id="headerContainer"></header>
-				
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<section id="title" class="wrapper style1">
-						<div class="inner">
-							<h1 class="major">Lewis Tansley</h1>
-							<h2>A Comprehensive Portfolio of all of my current and ongoing projects.</h2>
-						</div>
-						</section>
-					</section> 
-			
+    <head>
 
-				<!-- Instagram Feed -->
-					<section id="one" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Development Snapshots</h2>
-							<p>A live view of current / ongoing developments.</p>
-							<script src="assets/js/platform.js" rel="noopener"></script>
-							<div class="elfsight-app-cdee6edb-2ebe-4494-94df-f38d0e788938" data-position="center center"></div>
-							<p></p>
-							<ul class="actions">
-								<li><a href="https://www.instagram.com/litastudios/" class="button">Visit Page</a></li>
-							</ul>
-						</div>
-					</section>
+        <title>Home</title>
+    
+        <meta charset="utf-8"/>
+        <meta name="description" content="my portfolio site"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
+        
+        <link rel="stylesheet" href="assets/css/main.css"/>
 
-		<!-- Projects -->
-		<section id="two" class="wrapper style2 spotlights">
-				<section>
-					<a class="image" href="images/convergence.jpg"><img src="images/convergence.jpg" class="lazyload" alt=""/></a>
-					<div class="content">
-						<div class="inner">
-							<h2>Convergence</h2>
-							<p></p>
-							<ul class="actions">
-								<li><a href="convergence" class="button">VIEW</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				<section>
-					<a class="image" href="images/Denial.jpg"><img src="images/Denial.jpg" class="lazyload" alt=""/></a>
-					<div class="content">
-						<div class="inner">
-							<h2>Denial</h2>
-							<p></p>
-							<ul class="actions">
-								<li><a href="inprogress" class="button">VIEW</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-				<section>
-					<a class="image" href="images/ba.jpg"><img src="images/ba.jpg" class="lazyload" alt=""/></a>
-					<div class="content">
-						<div class="inner">
-							<h2>The Beasts Above</h2>
-							<p></p>
-							<ul class="actions">
-								<li><a href="beastsabove" class="button">VIEW</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-			</section>
-			<!--  About -->
-				<section id="three" class="wrapper style3 fade-up">
-					<div class="inner">
-						
-						<div class="split style1">
-									<section>
-										<h1 class="major">About Me</h1>
-										<p>Hi, I am Lewis.</p>
-										<p>I have been active in software and video games development for over a decade. <br>I am an experienced Data Analyst with a demonstrated history of working in the information technology and services industry. Skilled in Service Delivery, Data Analysis, Real-time Data, Programming, and Service Delivery Management. Strong information technology professional with a bsc hons focused in games development and programming from Staffordshire University.</p>
-									</section>
-									<section>
-										<div class="inner"><img class="image fit" src="images/me.jpg" alt=""/></div>
-										<div class="inner"><img class="image fit" src="images/LTLogo.png" alt=""/></div>
-									</section>
-								</div>	
-						</div>
-				</section>
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $("#headerContainer").load("header.html");
+                $("#footerContainer").load("footer.html");
 
-		<!-- Footer -->
-		<div id="footerContainer"></div>
-	</div>
-		<!-- Scripts -->
-			<script src="assets/js/jquery-3.4.1.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/cookieCatcher.js"></script>
+            });
+        </script>
 
-	</body>
+    </head>
+
+    <body>
+
+        <div id="bodyWrapper" class="wrapper">
+            
+            <section id="sidebarContainer" class="bgDimmer" onclick="sidebarSwap()"></section>
+
+            <header id="headerContainer" class="header"></header>
+
+            <div>
+                <section class="mainSectionStyle">
+                    <h1 class="majorH">Lewis Tansley</h1>
+                    <div class="padderS">
+                        <p class="genericP">A Comprehensive Portfolio of all of my current and ongoing projects.
+                            </p>
+                    </div>
+                </section>
+                <section class="mainSectionStyle">
+                        <h1 class="majorH">Development Snapshots</h1>
+                        <div class="padderS">
+                            <p class="genericP">Live updates on all of my ongoing projects.</p>
+                        </div>
+                    </section>
+                <section class="mainSectionStyle">
+                    <h1 class="majorH">Projects</h1>
+                    <div class="padderS">
+                        <p class="genericP">A detailed overlook of my main projects.</p>
+                        <div class="padderS">
+                            <section class="split">
+                                <div class="padderS">
+                                    <h1 class="minorH">Convergence</h1>
+                                    <a href="inprogress" class="button">VIEW</a>
+                                </div>
+                                <div>
+                                    <img src="assets/images/TDqiyana.png" class="myPortrait"/>
+                                </div>
+                            </section>
+                        </div>
+                        </br class="spacer">
+                        <div class="padderS">
+                            <section class="split">
+                                <div class="padderS">
+                                    <h1 class="minorH">Denial</h1>
+                                    <a href="inprogress" class="button">VIEW</a>
+                                </div>
+                                <div>
+                                    <img src="assets/images/TDqiyana.png" class="myPortrait"/>
+                                </div>
+                            </section>
+                        </div>
+                        </br class="spacer">
+                        <div class="padderS">
+                            <section class="split">
+                                <div class="padderS">
+                                    <h1 class="minorH">The Beasts Above</h1>
+                                    <a href="inprogress" class="button">VIEW</a>
+                                </div>
+                                <div>
+                                    <img src="assets/images/TDqiyana.png" class="myPortrait"/>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+        <div class="padderL">
+                <section class="secondarySectionStyle">
+                    <h2 class="majorH">About</h2>
+                    <div class="padderS">
+                        <section class="split">
+                            <div class="padderS">
+                                <p class="genericP">Hi, I am Lewis.
+
+                                        I have been active in software and video games development for over a decade.
+                                        I am an experienced Data Analyst with a demonstrated history of working in the information technology and services industry. Skilled in Service Delivery, Data Analysis, Real-time Data, Programming, and Service Delivery Management. Strong information technology professional with a bsc hons focused in games development and programming from Staffordshire University.</p>
+                            </div>
+                            <div>
+                                <img src="assets/images/liam_portrait_cropped.jpg" class="myPortrait"/>
+                                <img src="assets/images/liam_portrait_cropped.jpg" class="myPortrait"/>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        <div id="footerContainer" class="footer"></div>
+
+        <script type="text/javascript">
+            function sidebarSwap() {
+
+                if($('#sidebar').length > 0){
+                    document.getElementById("sidebarContainer").innerHTML = "";
+                    document.getElementById("sidebarContainer").style.display = "none";
+                    console.log("if")
+                }
+                else{
+                    $("#sidebarContainer").load("sidebar.html"); 
+                    document.getElementById("sidebarContainer").style.display = "block";
+                    console.log("else")
+                }
+            };
+        </script>
+
+    </body>
 </html>
