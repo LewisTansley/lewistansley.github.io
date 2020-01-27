@@ -71,7 +71,7 @@ h1.minorH{
     color:#404040;
     font-size: 20pt;
     position: relative;
-    padding-bottom: 0.35em;
+    padding-bottom: 0.5em;
 
 
 }
@@ -92,7 +92,7 @@ h1.minorH::after {
     position: absolute;
     right: 0;
     width: 100%;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.4em;
 }
 
 /* Header type 2 */
@@ -100,11 +100,13 @@ h2.majorH{
 
 
     border-radius: 40px;
-    padding: 0.5em 0.5em 0.5em 1em;
+    padding: 0.25em 0.25em 0.25em 1em;
     color:#DFDFDF;
     font-size: 20pt;
-    background-color: #404040;
-    box-shadow: 6px 6px 16px rgb(163,177,198,0.6), -6px -6px 16px  rgba(255,255,255, 0.6);
+    background-image: -moz-linear-gradient(to right,#404040,rgba(0,0,0,0));
+    background-image: -webkit-linear-gradient(to right,#404040,rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(to right,#404040,rgba(0,0,0,0));
+    background-image: linear-gradient(to right,#404040,rgba(0,0,0,0));
 
 }
 h2.minorH{
@@ -629,3 +631,13 @@ a {
         border-bottom-color: transparent;
         color: #404040aa;
     }
+.button{
+
+    background-color: #404040;
+    color: #dfdfdf;
+    padding: 0.25em 1em;
+    border-radius: 1em;
+    box-shadow: 6px 6px 16px rgb(163,177,198,0.6), -6px -6px 16px  rgba(255,255,255, 0.6);
+
+
+}
