@@ -57,6 +57,21 @@
         </div>
 
         <div id="footerContainer" class="footer"></div>
+        <script type="text/javascript">
+            function sidebarSwap() {
 
+                if($('#sidebar').length > 0){
+                    document.getElementById("sidebarContainer").innerHTML = "";
+                    document.getElementById("sidebarContainer").style.display = "none";
+                    document.getElementById("sidebarContainer").onclick.display = "none";
+                    console.log("if")
+                }
+                else{
+                    $("#sidebarContainer").load("sidebar.html"); 
+                    document.getElementById("sidebarContainer").style.display = "block";
+                    console.log("else")
+                }
+            };
+        </script>
     </body>
 </html>
