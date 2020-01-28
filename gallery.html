@@ -28,7 +28,9 @@
     <body>
 
         <div id="bodyWrapper" class="wrapper">
-        
+
+            <section id="sidebarContainer" class="bgDimmer" onclick="sidebarSwap()"></section>
+
             <header id="headerContainer" class="header"></header>
 
             <div>
@@ -59,10 +61,11 @@
         <div id="footerContainer" class="footer"></div>
         <script type="text/javascript">
             function sidebarSwap() {
-
+        
                 if($('#sidebar').length > 0){
                     document.getElementById("sidebarContainer").innerHTML = "";
                     document.getElementById("sidebarContainer").style.display = "none";
+                    document.getElementById("sidebarContainer").onclick = 'sidebarSwap()';
                     console.log("if")
                 }
                 else{
