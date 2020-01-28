@@ -4,10 +4,12 @@
 	<head>
 		<title>Projects</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="assets/js/jquery-3.4.1.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
+        
+        <link rel="stylesheet" href="assets/css/main.css"/>
+
+        <script data-ad-client="ca-pub-4194300092004125" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
 		<script> 
 			$(function(){
 			$("#header").load("header.html"); 	
@@ -15,41 +17,52 @@
 			});
 		</script> 
 	</head>
-	<body class="is-preload">
+	<body>
 
-	<!-- Header -->
-	<header id="header"></header>	
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<section id="sidebarContainer" class="bgDimmer" onclick="sidebarSwap()"></section>
+		
+		<header id="headerContainer" class="header"></header>
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">The Beasts Above Project</h1>
-							<h2>The Rundown.</h2>
-							<p>The beasts above is a resource management / survival game set at an undisclosed time</p>
-							<p>This game is a long - term passion project - over 3 years active so far. As a result this project has no specific release date</p>
-							<p>Project Content: <bold>C++</bold> // <bold>Visual Studio</bold> // <bold>Unreal engine 4</bold> // <bold>Photoshop</bold></p>
-							<section id="main" class="iframe">
-								<iframe frameborder="0" scrolling="no" src="https://www.youtube.com/embed/5qkH_kzf1rw"></iframe>
-							</section>
-															<p>An update video to showcase new developments and features to come soon.</p>
+		<div id="wrapper">
+			<section class="mainSectionStyle">
+				<div class="padderS">
+					<h1 class="majorH">The Beasts Above Project</h1>
+					<div class="padderS">
+						<h1 class="minorH">The Rundown.</h2>
+						<div class="padderS">
+							<p class="genericP">The beasts above is a resource management / survival game set at an undisclosed time</p>
+							<p class="genericP">This game is a long - term passion project - over 3 years active so far. As a result this project has no specific release date</p>
+							<p class="genericP">Project Content: <bold>C++</bold> // <bold>Visual Studio</bold> // <bold>Unreal engine 4</bold> // <bold>Photoshop</bold></p>
+							<div class="padderS">
+								<iframe class="scaler" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/5qkH_kzf1rw"></iframe>
 							</div>
-					</section>
+							<p class="genericP">An update video to showcase new developments and features to come soon.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
 
-			</div>
 
-		<!-- Footer -->
-		<div id="footer"></div>
+		<footer id="footerContainer"></footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script type="text/javascript">
+            function sidebarSwap() {
+        
+                if($('#sidebar').length > 0){
+                    document.getElementById("sidebarContainer").innerHTML = "";
+                    document.getElementById("sidebarContainer").style.display = "none";
+                    document.getElementById("sidebarContainer").onclick = 'sidebarSwap()';
+                    console.log("if")
+                }
+                else{
+                    $("#sidebarContainer").load("sidebar.html"); 
+                    document.getElementById("sidebarContainer").style.display = "block";
+                    document.getElementById("sidebarContainer").onclick = '';
+                    console.log("else")
+                }
+            };
+        </script>
 
 	</body>
 </html>

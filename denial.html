@@ -1,13 +1,16 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 	<head>
 		<title>Projects</title>
+
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="assets/js/jquery-3.4.1.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
+        
+        <link rel="stylesheet" href="assets/css/main.css"/>
+
+        <script data-ad-client="ca-pub-4194300092004125" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
 		<script> 
 			$(function(){
 			$("#header").load("header.html"); 
@@ -15,37 +18,43 @@
 			});
 		</script> 
 	</head>
-	<body class="is-preload">
+	<body>
+		<section id="sidebarContainer" class="bgDimmer" onclick="sidebarSwap()"></section>
+		
+		<header id="headerContainer" class="header"></header>
+		
+		<div id="bodyWrapper" class="wrapper">
+                <section class="mainSectionStyle">
+					<div class="padderS">
+						<h1 class="majorH">The denial Project</h1>
+						<div class="padderS">
+							<p class="genericP">Denial is a 3D Non - Euclidean puzzle game set in an abandoned prison.</p>
+							<p class="genericP">Project Content: <bold>C++</bold> // <bold>Visual Studio</bold> // <bold>Unreal engine 4</bold> // <bold>Photoshop</bold></p>
+							<p class="genericP">To be revealed.</p>
+						</div>
+					</div>
+				</section>
+		</div>
 
-	<!-- Header -->
-	<header id="header"></header>	
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<footer id="footerContainer"></footer>
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">The denial Project</h1>
-							<p>Denial is a 3D Non - Euclidean puzzle game set in an abandoned prison.</p>
-														<p>Project Content: <bold>C++</bold> // <bold>Visual Studio</bold> // <bold>Unreal engine 4</bold> // <bold>Photoshop</bold></p>
-							<!-- <span class="image fit"><img src="images/pic04.jpg" alt="" /></span> --> 
-							<p>To be revealed.</p>
-							</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-		<div id="footer"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script type="text/javascript">
+            function sidebarSwap() {
+        
+                if($('#sidebar').length > 0){
+                    document.getElementById("sidebarContainer").innerHTML = "";
+                    document.getElementById("sidebarContainer").style.display = "none";
+                    document.getElementById("sidebarContainer").onclick = 'sidebarSwap()';
+                    console.log("if")
+                }
+                else{
+                    $("#sidebarContainer").load("sidebar.html"); 
+                    document.getElementById("sidebarContainer").style.display = "block";
+                    document.getElementById("sidebarContainer").onclick = '';
+                    console.log("else")
+                }
+            };
+        </script>
 
 	</body>
 </html>
