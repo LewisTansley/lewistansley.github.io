@@ -651,3 +651,7 @@ a {
     box-shadow: 6px 6px 16px rgb(163,177,198,.6), -6px -6px 16px rgba(253,253,253,.6);
 
 }
+.iframe.scaler{
+    width: 35em;
+    min-height: 20em;
+}
