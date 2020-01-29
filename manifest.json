@@ -1,4 +1,5 @@
-{
+[
+  {
     "short_name": "Portfolio",
     "name": "LewisTansley.com",
     "description": "My Portfolio",
@@ -19,4 +20,5 @@
     "display": "standalone",
     "scope": "/",
     "theme_color": "#dfdfdf"
-  }
+}
+]
