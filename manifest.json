@@ -4,19 +4,19 @@
     "description": "My Portfolio",
     "icons": [
       {
-        "src": "images/LTLogo_I.png",
+        "src": "images/LTLogo.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "images/LTLogo_I.png",
+        "src": "images/LTLogo.png",
         "type": "image/png",
         "sizes": "512x512"
       }
     ],
     "start_url": "/?source=pwa",
-    "background_color": "#dfdfdf",
+    "background_color": "#404040",
     "display": "standalone",
     "scope": "/",
-    "theme_color": "#dfdfdf"
+    "theme_color": "#404040"
 }
