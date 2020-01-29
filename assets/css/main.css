@@ -39,7 +39,7 @@ body{
 .secondarySectionStyle{
 
     width: auto;
-    border-radius: 10px;
+    border-radius: 40px;
     padding:4em 4em 4em 4em;
     background-color:#DFDFDF;
     box-shadow: 6px 6px 16px rgb(163,177,198,.6), -6px -6px 16px rgba(255,255,255,.6);
