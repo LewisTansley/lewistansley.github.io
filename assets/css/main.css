@@ -42,7 +42,7 @@ body{
     border-radius: 10px;
     padding:4em 4em 4em 4em;
     background-color:#DFDFDF;
-    box-shadow: 6px 6px 16px rgb(163,177,198,0.6), -6px -6px 16px  rgba(255,255,255, 0.6);
+    box-shadow: 9px 9px 16px #40404033, -9px -9px 16px  #dfdfdfaa;
 
 }
 html{
@@ -62,7 +62,7 @@ h1.majorH{
     font-size: 24pt;
     font-weight: bold;
     background-color: #404040;
-    box-shadow: 6px 6px 16px rgb(163,177,198,0.6), -6px -6px 16px  rgba(255,255,255, 0.6);
+    box-shadow: 9px 9px 16px #40404033, -9px -9px 16px  #dfdfdfaa;
 
 
 }
@@ -248,6 +248,8 @@ a{
 
     max-width:100%;
     max-height: 512px;
+    box-shadow: 9px 9px 16px #40404033, -9px -9px 16px  #dfdfdfaa;
+    border-radius: 0.5em;
 
 }
 
@@ -472,7 +474,7 @@ ul.icons {
     text-align: right;
     border-radius:70px;
     background-color:#dfdfdf;
-    box-shadow: 9px 9px 16px rgba(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.6);
+    box-shadow: 9px 9px 16px #40404033, -9px -9px 16px  #dfdfdfaa;
 
 }
 
@@ -581,7 +583,7 @@ ul.icons {
     border-style: none;
     padding:1em;
     border-radius: 8em;
-    box-shadow: 9px 9px 16px rgba(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.6);
+    box-shadow: 9px 9px 16px #40404033, -9px -9px 16px  #dfdfdfaa;
 
   }
   .logo{
