@@ -1,5 +1,4 @@
-[
-  {
+{
     "short_name": "Portfolio",
     "name": "LewisTansley.com",
     "description": "My Portfolio",
@@ -21,4 +20,3 @@
     "scope": "/",
     "theme_color": "#dfdfdf"
 }
-]
