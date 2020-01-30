@@ -252,8 +252,7 @@ a{
     margin: 1em;
     max-width:100%;
     max-height: 512px;
-    box-shadow: 6px 6px 16px rgb(163,177,198,.6), -6px -6px 16px rgba(253,253,253,.6);
-    border-radius: 0.5em;
+
 
 }
 
