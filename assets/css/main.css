@@ -470,6 +470,7 @@ a {
 
 .card {
     max-width: 300px;
+    width: 100%;
     display: grid;
     grid-template-rows: 300px 200px;
     grid-template-areas: "image" "text";
