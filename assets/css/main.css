@@ -37,9 +37,23 @@ section, summary, time, mark, audio, video {
 body{
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color:#404040;    
+    background-color: #404040;
+    background-repeat: repeat;
+    background-image: url("images/prism.png");
+    background-attachment: fixed;
 
 
+}
+
+.background{
+    background-color: #404040;
+    background-repeat: repeat;
+    background-image: url("images/prism.png");
+    background-attachment: fixed;
+    width: 100%;
+    max-width: 100%;
+    height: fit-content;
+    
 }
 
 .mainSectionStyle{
@@ -52,10 +66,11 @@ body{
 .secondarySectionStyle{
     max-width: 75%;
     padding:2em 4em 2em 4em;
-    background-color:#000;
+    background-color:#000000aa;
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
+
 }
 html{
 
@@ -458,7 +473,6 @@ a {
     display: grid;
     grid-template-rows: 300px 200px;
     grid-template-areas: "image" "text";
-    background-image: linear-gradient(to bottom, #404040, #404040);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     transition: 0.3s ease;
@@ -469,6 +483,8 @@ a {
     margin-bottom: 30px;
     color: #707070;
     z-index: 0;
+    background-color: #574b9000;
+
 
   }
   .card-user {
@@ -482,7 +498,6 @@ a {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     transition: 0.3s ease;
-    cursor: pointer;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -593,8 +608,9 @@ a {
     transform: scale(1.15);
     box-shadow: 0px 0px 25px #00000070;
     color: #fff;
-    background-image: linear-gradient(to bottom, #404040, #574b90);
+    background-color: #574b90;
     z-index: 5;
+
   }
 
 .cardContainer{
@@ -620,19 +636,16 @@ a {
     z-index: -1;
 }
 .carouselContainer{
-    position:  absolute;
+    position: fixed;
     background-position: center calc(72.8%);
     background-size: cover;
     width: 100%;
-    content: '';
     height: 1200px;
-    z-index: 0;
     overflow: hidden;
     transition: 0.3s ease;
     color: #fff;
-
+    z-index: -2;
 }
-
 .carouselImage{
     background-image: url("images/39392652_1807773259303874_7949908190571790336_n.jpg");
     position:  inherit;
@@ -650,7 +663,7 @@ a {
     margin-right: auto;
     transform: translateY(55%);
     z-index: 0;
-
+    text-shadow: 5px 5px 25px #404040;
     font-family: Ov;
     font-size: 9vw;
     font-weight: 900;
@@ -667,14 +680,13 @@ a {
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
-
+    text-shadow: 5px 5px 25px #404040;
     font-family: GW;
     font-size: 6vw;
     font-weight: 600;
     line-height: 5vh;
     color: #fff;
     opacity: 0.8;
-    
 
 }
 @media screen and (max-width:1600px){
@@ -717,7 +729,7 @@ a {
     width: 100%;
 }
 .miniSectionContainer{
-    background-color: #000;
+    background-color: #000000aa;
     max-width: 100%;
 }
 .miniSectionStyle{
