@@ -469,7 +469,7 @@ a {
 }
 
 .card {
-    width: 300px;
+    max-width: 300px;
     display: grid;
     grid-template-rows: 300px 200px;
     grid-template-areas: "image" "text";
@@ -538,16 +538,22 @@ a {
     grid-area: image;
     background: url("images/convergence.jpg");
     background-size: cover;
+    background-position-x: center;
+
   }  
   .card-image2 {            
     grid-area: image;
     background: url("images/Denial.jpg");
     background-size: cover;
+    background-position-x: center;
+
   }  
   .card-image3 {
     grid-area: image;
     background: url("images/ba.jpg");
     background-size: cover;
+    background-position-x: center;
+
   }  
   .card-user-image {
     grid-area: image;
@@ -555,6 +561,7 @@ a {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     background-size: cover;
+    background-position-x: center;
   }  
 
   .card-text .date {
