@@ -1,141 +1,102 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
-    <head>
+<head>
 
-        <title>Home</title>
+    <title>Home</title>
     
-        <meta charset="utf-8"/>
-        <meta name="description" content="my portfolio site"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
-        <meta name="theme-color" content="#dfdfdf"/>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Staffordshire University Formula 1 Team."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
+    <meta name="theme-color" content="#dfdfdf"/>
 
-        <link rel="manifest" href="/manifest.json">
-        <link rel="stylesheet" href="assets/css/main.css"/>
+    <!-- <link rel="manifest" href="/manifest.json"> -->
+    <link rel="stylesheet" href="assets/css/main.css">
 
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <script data-ad-client="ca-pub-4194300092004125" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
-        <script>
-            $(function(){
-                $("#headerContainer").load("header.html");
-                $("#footerContainer").load("footer.html");
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 
-            });
-        </script>
 
-    </head>
+    <script>
+        $(function(){
+            $("#headerContainer").load("header.html");
+            $("#footerContainer").load("footer.html");
+            $("#sidebarContainer").load("sidebar.html");
 
-    <body>
+        });
+    </script>
 
-        <div id="bodyWrapper" class="wrapper">
+
+</head>
+<body>
+
+    <div id="bodyWrapper" class="wrapper">
             
-            <section id="sidebarContainer" class="bgDimmer" onclick="sidebarSwap()"></section>
+        <section id="sidebarContainer" class="bgDimmer" onclick="sidebarSwap()" style="left: -5000px;"></section>
 
-            <header id="headerContainer" class="header"></header>
+        <header id="headerContainer" class="header"></header>
 
-            <div>
-                <section class="mainSectionStyle">
-                    <h1 class="majorH">Lewis Tansley</h1>
-                    <div class="padderS">
-                        <div class="padderS">
-                            <p class="genericP">A Comprehensive Portfolio of all of my current and ongoing projects.</p>
-                        </div>                    
-                    </div>
-                </section>
-                <section class="mainSectionStyle">
-                        <h2 class="majorH">Development Snapshots</h2>
-                        <div class="padderS">
-                            <div class="padderS">
-                                <p class="genericP">Live updates on all of my ongoing projects.</p>
-                            </div>
-                            <div class="padderS">
-                                <div class="elfsight-app-cdee6edb-2ebe-4494-94df-f38d0e788938"></div>
-                            </div>
-                        </div>
-                    </section>
-                <section class="mainSectionStyle">
-                    <h2 class="majorH">Projects</h2>
-                    <div class="padderS">
-                        <div class="padderS">
-                            <p class="genericP">A detailed overlook of my main projects.</p>
-                        </div>
-                        <div class="padderS">
-                            <section class="split">
-                                <div>
-                                    <img src="images/convergence.jpg" class="myPortrait"/>
-                                </div>
-                                <div class="padderS">
-                                    <h1 class="minorH">Convergence</h1>
-                                    <a href="convergence" class="button">VIEW</a>
-                                </div>
-                            </section>
-                        </div>
-                        </br>
-                        <div class="padderS">
-                            <section class="split">
-                                <div>
-                                    <img src="images/Denial.jpg" class="myPortrait"/>
-                                </div>
-                                <div class="padderS">
-                                    <h1 class="minorH">Denial</h1>
-                                    <a href="denial" class="button">VIEW</a>
-                                </div>
-                            </section>
-                        </div>
-                        </br>
-                        <div class="padderS">
-                            <section class="split">
-                                <div>
-                                    <img src="images/ba.jpg" class="myPortrait"/>
-                                </div>
-                                <div class="padderS">
-                                    <h1 class="minorH">The Beasts Above</h1>
-                                    <a href="beastsabove" class="button">VIEW</a>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
+        <div>
+            <div class="carouselContainer">
+                <div class="carouselImage"></div>
+                <p class="carouselH1">Lewis Tansley</p>
+                <p class="carouselH2">One man army proving indie games can look good too.</p>
+
+
             </div>
+            <div class="initialSpace"></div>
+            <div class="miniSectionContainer"><div class="miniSectionStyle"><p>“A lot of indie developers who became 'Overnight Successes' were working at it for ten years.”</p></div></div>
 
+            <section class="mainSectionStyle">
+                <h2 class="majorH">My Projects</h2>
+                <div class="padderS">
+                    <section class="cardContainer">
+                        <div class="card">
+                            <div class="card-image1"></i></div>
+                            <div class="card-text">
+                                <h2>Convergence</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image2"></div>
+                            <div class="card-text">
+                                <h2>Denial</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image3"></div>
+                            <div class="card-text">
+                                <h2>The Beasts Above</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="padderL">
-                <section class="secondarySectionStyle">
-                    <h2 class="majorH">About</h2>
-                    <div class="padderS">
-                        <section class="split">
-                            <div class="padderS">
-                                <p class="genericP">Hi, I am Lewis.
-
-                                        I have been active in software and video games development for over a decade.
-                                        I am an experienced Data Analyst with a demonstrated history of working in the information technology and services industry. Skilled in Service Delivery, Data Analysis, Real-time Data, Programming, and Service Delivery Management. Strong information technology professional with a bsc hons focused in games development and programming from Staffordshire University.</p>
-                            </div>
-                            <div>
-                                <img src="images/me.jpg" class="myPortrait"/>
-                            </div>
-                        </section>
+    </div>
+    <div class="spacer"></div>
+    <div class="miniSectionContainer"><div class="miniSectionStyle"><p>“You can make an amazing game, but you can't make a success. Your players make the success.”</p></div></div>
+    <div class="spacer"></div>
+    <section class="secondarySectionStyle">
+        <h2 class="minorH">ABOUT</h2>
+       
+        <div class="padderS">
+            <div class="cardContainer">
+                <div class="card-user">
+                    <div class="card-user-image"></div>
+                    <div class="card-user-text">
+                        <p>Hi, I am Lewis. I have been active in software and video games development for over a decade. I am an experienced Data Analyst with a demonstrated history of working in the information technology and services industry. Skilled in Service Delivery, Data Analysis, Real-time Data, Programming, and Service Delivery Management. Strong information technology professional with a bsc hons focused in games development and programming from Staffordshire University.</p>
                     </div>
-                </section>
+                </div>
             </div>
-        <footer id="footerContainer" class="footer"></footer>
+        </div>
+    </section>
+    <div class="spacer"></div>
+    <div class="miniSectionContainer"><div class="miniSectionStyle"><p>“There is only One Man Playing your Game, You!”</p></div></div>
 
-        <script type="text/javascript">
-            function sidebarSwap() {
-        
-                if($('#sidebar').length > 0){
-                    document.getElementById("sidebarContainer").innerHTML = "";
-                    document.getElementById("sidebarContainer").style.display = "none";
-                    document.getElementById("sidebarContainer").onclick = 'sidebarSwap()';
-                    console.log("if")
-                }
-                else{
-                    $("#sidebarContainer").load("sidebar.html"); 
-                    document.getElementById("sidebarContainer").style.display = "block";
-                    document.getElementById("sidebarContainer").onclick = '';
-                    console.log("else")
-                }
-            };
-        </script>
+    <footer id="footerContainer" class="footer"></footer>
 
-    </body>
+</body>
+
 </html>
