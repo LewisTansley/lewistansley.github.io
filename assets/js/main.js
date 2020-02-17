@@ -11,14 +11,19 @@ window.onscroll = function() {
 
 function sidebarSwap() {
     
-    if($('#sidebar').css('left') == '0px'){
-        document.getElementById("sidebar").style.left = "-500px";
-        document.getElementById("sidebarContainer").style.left = "-5000px";
+    if($('#sidebar').css('opacity') == '1'){
+        document.getElementById("sidebar").style.opacity = "0";
+        document.getElementById("sidebarContainer").style.pointerEvents = 'none';
+        document.getElementById("body").style.overflow = '';
+
         document.getElementById("sidebarContainer").onclick = 'sidebarSwap()';
+
     }
     else{
-        document.getElementById("sidebar").style.left = "0px";
-        document.getElementById("sidebarContainer").style.left = "0px";
+        document.getElementById("sidebar").style.opacity = "1";
+        document.getElementById("sidebarContainer").style.pointerEvents = '';
         document.getElementById("sidebarContainer").onclick = '';
+        document.getElementById("body").style.overflow = 'hidden';
+
     }
 };
