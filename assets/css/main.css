@@ -32,7 +32,7 @@ section, summary, time, mark, audio, video {
 }
 @font-face{
     font-family: "GW";
-    src: url("fonts/FreePen.otf");
+    src: url("fonts/PaulSignature.ttf");
 }
 body{
 
@@ -655,43 +655,41 @@ a {
     height: inherit;
     filter: brightness(0.85) contrast(1.15) saturate(0.75);
 }
-.carouselH1{
+.carouselText{
     width: inherit;
-    height: 50%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(55%);
-    z-index: 0;
-    text-shadow: 5px 5px 25px #404040;
-    font-family: Ov;
-    font-size: 9vw;
-    font-weight: 900;
     color: #fff;
-    opacity: 0.8;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;    
-}
-.carouselH2{
-
-    max-width: 60%;
-    width: inherit;
-    height: inherit;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
-    text-shadow: 5px 5px 25px #404040;
-    font-family: GW;
-    font-size: 6vw;
-    font-weight: 600;
-    line-height: 5vh;
-    color: #fff;
-    opacity: 0.8;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    transform: translateY(50%);
+}
+.carouselH1{
+    width: inherit;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 9vw;
+    font-weight: 900;
+    text-align: inherit;
+    text-shadow: 0px 0px 25px #404040aa;
+    transform: translateY(50px);
+    z-index: 1;
+    position: relative;
+}
+.carouselH2{
+    max-width: 60%;
+    width: inherit;
+    margin-left: inherit;
+    margin-right: inherit;
+    font-family: GW;
+    font-size: 6vw;
+    font-weight: 300;
+    line-height: 5vh;
+    text-align: inherit;
+    text-shadow: 0px 0px 15px #404040aa;
+    z-index: 2;
+    position: relative;
 }
 @media screen and (max-width:1600px){
  
