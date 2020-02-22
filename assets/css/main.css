@@ -37,18 +37,18 @@ section, summary, time, mark, audio, video {
 body{
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #404040;
+    background-color: #fff;
     background-repeat: repeat;
-    background-image: url("images/prism.png");
+    background-image: url("images/geometry2X.png");
     background-attachment: fixed;
 
 
 }
 
 .background{
-    background-color: #404040;
+    background-color: #fff;
     background-repeat: repeat;
-    background-image: url("images/prism.png");
+    background-image: url("images/geometry2X.png");
     background-attachment: fixed;
     width: 100%;
     max-width: 100%;
@@ -66,17 +66,17 @@ body{
 .secondarySectionStyle{
     max-width: 75%;
     padding:2em 4em 2em 4em;
-    background-color:#00000070;
+    background-color:#40404050;
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
 
 
 }
 html{
 
-    color:#fff;
+    color:#000;
 
 
 }
@@ -107,7 +107,7 @@ html{
 h1.majorH{
 
     padding: 0.5em 0.5em 0.5em 1em;
-    color:#FFF;
+    color:#000;
     font-size: 24pt;
     font-weight: lighter;
     text-transform: uppercase;
@@ -118,7 +118,7 @@ h1.minorH{
 
     border-radius: 25px;
 
-    color:#fff;
+    color:#000;
     font-size: 20pt;
     font-weight: lighter;
     position: relative;
@@ -132,25 +132,25 @@ h2.majorH{
 
 
     padding: 0.25em 0.25em 0.25em 1em;
-    color:#fff;
+    color:#000;
     font-size: 20pt;
     font-weight: lighter;
     text-align: center;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
     
 
 
 }
 h2.minorH{
     padding: 0.25em 0.25em 0.25em 1em;
-    color:#fff;
+    color:#000;
     font-size: 20pt;
     font-weight: lighter;
     text-align: center;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
 }
 .genericP{
-    color:#fff;
+    color:#000;
     font-size: 16pt;
     font-weight: lighter;
 }
@@ -162,7 +162,7 @@ h2.minorH{
 }
 a{
     list-style: none;
-    color: #404040;
+    color: #fff;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
 }
@@ -177,7 +177,7 @@ a{
 }
 
 .split > :nth-child(2n - 1) {
-    border-bottom: solid 1px #404040;
+    border-bottom: solid 1px #000;
 }
 
 .myPortrait{
@@ -288,9 +288,9 @@ ul.icons {
                     width: 2.5em;
                     height: 2.5em;
                     display: block;
-                    background: #FFF;
+                    background: #000;
                     border-radius: 100%;
-                    color: #FFF;
+                    color: #000;
                     text-align: center;
                     line-height: 2.5em;
                     margin: 0 0 1.3em 0;
@@ -326,7 +326,7 @@ ul.icons {
 }
 .header{
     list-style: none;
-    background-color: #00000070;
+    background-color: #80808050;
     text-align: right;
     position: fixed;
     width: 100%;
@@ -355,7 +355,7 @@ ul.icons {
 /* sidebar */
 .sidebar{
 
-    background-color: #00000070;
+    background-color: #ffffff50;
     cursor: default;
     height: 100%;
     left: 0;
@@ -398,7 +398,7 @@ ul.icons {
 }
 .sidebar nav > ul{
     padding: 1.5em 1.5em 0.5em 1.5em ;
-    color: #fff;
+    color: #000;
     text-align: center;
     list-style: none;
     padding: 0;
@@ -420,7 +420,7 @@ ul.icons {
     list-style: none;
 }
 .siteSearch{
-    background-color: #ffffffaa;
+    background-color: #000000aa;
     border-style: none;
     padding:1em;
     border-radius: 10px;
@@ -450,7 +450,7 @@ a {
     -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
     transition: color 0.2s ease, border-bottom-color 0.2s ease;
     border-bottom: none;
-    color: #FFF;
+    color: #000;
     text-decoration: none;
 }
 
@@ -462,8 +462,8 @@ a {
     }
 .button{
 
-    background-color: #404040;
-    color: #FFF;
+    background-color: #fff;
+    color: #000;
     padding: 0.25em 1em;
     border-radius: 25px;
 
@@ -474,7 +474,6 @@ a {
     font-family: unset;
     height: 25px;
     padding: 0.5em 0.5em;
-    background-color: #574b90;
     font-size: 20px;
     border-radius: 100px;
     transition: ease 0.3s;
@@ -487,7 +486,6 @@ a {
 }
 .bigX:hover{
     transform: scale(1.2);
-    background-color:#9e579d;
     cursor: pointer;
 }
 .iframe.scaler{
@@ -511,7 +509,8 @@ a {
     margin-bottom: 30px;
     color: #707070;
     z-index: 0;
-    background-color: #574b9000;
+    background-color: #40404050;
+    backdrop-filter: blur(2px);
 
 
   }
@@ -568,21 +567,18 @@ a {
     background: url("images/convergence.jpg");
     background-size: cover;
     background-position-x: center;
-
   }  
   .card-image2 {            
     grid-area: image;
     background: url("images/Denial.jpg");
     background-size: cover;
     background-position-x: center;
-
   }  
   .card-image3 {
     grid-area: image;
     background: url("images/ba.jpg");
     background-size: cover;
     background-position-x: center;
-
   }  
   .card-user-image {
     grid-area: image;
@@ -615,8 +611,6 @@ a {
   .card-stats {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
     color: #fff;
     grid-area: stats; 
     text-transform: uppercase;
@@ -625,11 +619,11 @@ a {
     
   }  
  .statsText{
-     color: #404040;
+     color: #000;
      transition: 0.3s ease;
 }
  .statsText:hover{
-     color: #fff;
+     color: #000;
 
  }
   card-stats .stat {
@@ -637,7 +631,7 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #FFF;
+    color: #000;
     padding:10px;
   }  
   .card:hover {
@@ -646,6 +640,8 @@ a {
     color: #fff;
     background-color: #574b90;
     z-index: 5;
+    backdrop-filter: unset;
+
 
   }
 
@@ -679,20 +675,18 @@ a {
     height: 1200px;
     overflow: hidden;
     transition: 0.3s ease;
-    color: #fff;
+    color: #000;
     z-index: -2;
-}
-.carouselImage{
-    background-image: url("images/39392652_1807773259303874_7949908190571790336_n.jpg");
-    position:  inherit;
-    background-position: inherit;
-    background-size: inherit;
-    width: inherit;
-    height: inherit;
+    background-image: url("images/ue4.jpg");
     filter: brightness(0.85) contrast(1.15) saturate(0.75);
+    background-position-x: center;
+    
+
 }
+
 .carouselText{
     width: inherit;
+    height: inherit;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -700,33 +694,39 @@ a {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    transform: translateY(50%);
 }
 .carouselH1{
-    width: inherit;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 9vw;
-    font-weight: 900;
-    text-align: inherit;
-    text-shadow: 0px 0px 25px #404040aa;
-    transform: translateY(50px);
+    font-weight: 300;
+    transform: translateY(0%);
+    height: 50%;
+    top: 35%;
     z-index: 1;
     position: relative;
+    text-shadow: 0 0 15px #404040aa;
+
 }
 .carouselH2{
     max-width: 60%;
-    width: inherit;
-    margin-left: inherit;
-    margin-right: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    height: 55%;
     font-family: GW;
     font-size: 6vw;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 1em;
     text-align: inherit;
-    text-shadow: 0px 0px 15px #404040aa;
     z-index: 2;
     position: relative;
+    transform: translateY(0%);
+    text-shadow: 0 0 25px #404040aa;
+
 }
+
 @media screen and (max-width:1600px){
  
     .carouselContainer{
@@ -735,9 +735,7 @@ a {
     .initialSpace{
         height: 1000px;
     }
-    .carouselH2{
-        transform: translateY(12px);
-    }
+
 }
 @media screen and (max-width:1400px){
  
@@ -747,9 +745,7 @@ a {
     .initialSpace{
         height: 800px;
     }
-    .carouselH2{
-        transform: translateY(24px);
-    }
+
 }
 @media screen and (max-width:1200px){
  
@@ -759,9 +755,7 @@ a {
     .initialSpace{
         height: 600px;
     }
-    .carouselH2{
-        transform: translateY(36px);
-    }
+
 }
 @media screen and (max-width:1000px){
  
@@ -771,9 +765,17 @@ a {
     .initialSpace{
         height: 400px;
     }
-    .carouselH2{
-        transform: translateY(48px);
+
+}
+@media screen and (max-width:500px){
+ 
+    .carouselContainer{
+        height: 250px;
     }
+    .initialSpace{
+        height: 250px;
+    }
+
 }
 
 .backdrop{
@@ -781,12 +783,11 @@ a {
 }
 
 .miniSectionContainer{
-    background-color: #00000070;
+    background-color: #80808050;
     max-width: 100%;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
 }
 .miniSectionStyle{
-    font-size: 1.4em;
     max-width: 75%;
     text-transform: uppercase;
     padding: 1em 2em;
@@ -803,7 +804,7 @@ a {
     top: 0;
     bottom: 0;
     width: 8px;
-    border: 2px solid #574b90;
+    border: 2px solid #9e579d;
     content: "";
 }
 .miniSectionStyle::before{

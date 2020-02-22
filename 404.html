@@ -3,46 +3,43 @@
 <html>
 	<head>
 		<title>404</title>
+		
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 		<script src="assets/js/jquery-3.4.1.js"></script>
+		<script src="assets/js/main.js"></script>
 		<script> 
 			$(function(){
-			$("#header").load("header.html"); 	
-			$("#footer").load("footer.html"); 
+				$("#headerContainer").load("header.html");
+            	$("#footerContainer").load("footer.html");
+            	$("#sidebarContainer").load("sidebar.html");
 			});
 		</script> 
 	</head>
-	<body class="is-preload">
+	<body>
 
-	<!-- Header -->
-	<header id="header"></header>
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">404 - Page Not Found.</h1>
-							<h2>Somethings not right...</h2>
-							<div class="tenor-gif-embed" data-postid="13396526" data-share-method="host" data-width="25%" data-aspect-ratio="1.0"><a href="https://tenor.com/view/scotty-startrek-im-giving-her-all-shes-got-gif-13396526">Scotty Startrek GIF</a> from <a href="https://tenor.com/search/scotty-gifs">Scotty GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script></div>
-					</section>
-
+        <section id="sidebarContainer" onclick="sidebarSwap()" style="pointer-events: none;"></section>
+		<header id="headerContainer" class="header"></header>
+        <div class="spacer"></div>
+		<section id="main" class="wrapper">
+			<div class="mainSectionStyle">
+				<h1 class="majorH">404 - Page Not Found.</h1>
+				<h2 class="minorH">Somethings not right...</h2>
+				<div class="spacer"></div>
+				<div class="tenor-gif-embed" data-postid="13396526" data-share-method="host" data-width="33%" data-aspect-ratio="1.0">
+					<a href="https://tenor.com/view/scotty-startrek-im-giving-her-all-shes-got-gif-13396526">Scotty Startrek GIF</a>  
+					<a href="https://tenor.com/search/scotty-gifs">Scotty GIFs</a>
+				</div>
+				<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+				<div class="spacer"></div>
+				<p>Whoops! This bit must not be finished. Please check back later.</p>
 			</div>
+		</section>
 
-		<!-- Footer -->
 		<div id="footer"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
