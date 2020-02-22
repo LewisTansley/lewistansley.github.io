@@ -26,38 +26,19 @@
 		
 		<header id="headerContainer" class="header"></header>
 		
-		<div id="bodyWrapper" class="wrapper">
-                <section class="mainSectionStyle">
+		<div class="spacer"></div>
+			<section class="mainSectionStyle">
+				<div class="padderS">
+					<h1 class="majorH">The denial Project</h1>
 					<div class="padderS">
-						<h1 class="majorH">The denial Project</h1>
-						<div class="padderS">
-							<p class="genericP">Denial is a 3D Non - Euclidean puzzle game set in an abandoned prison.</p>
-							<p class="genericP">Project Content: <bold>C++</bold> // <bold>Visual Studio</bold> // <bold>Unreal engine 4</bold> // <bold>Photoshop</bold></p>
-							<p class="genericP">To be revealed.</p>
-						</div>
+						<p class="genericP">Denial is a 3D Non - Euclidean puzzle game set in an abandoned prison.</p>
+						<p class="genericP">Project Content: <bold>C++</bold> // <bold>Visual Studio</bold> // <bold>Unreal engine 4</bold> // <bold>Photoshop</bold></p>
+						<p class="genericP">To be revealed.</p>
 					</div>
-				</section>
-		</div>
+				</div>
+			</section>
 
 		<footer id="footerContainer"></footer>
-
-		<script type="text/javascript">
-            function sidebarSwap() {
-        
-                if($('#sidebar').length > 0){
-                    document.getElementById("sidebarContainer").innerHTML = "";
-                    document.getElementById("sidebarContainer").style.display = "none";
-                    document.getElementById("sidebarContainer").onclick = 'sidebarSwap()';
-                    console.log("if")
-                }
-                else{
-                    $("#sidebarContainer").load("sidebar.html"); 
-                    document.getElementById("sidebarContainer").style.display = "block";
-                    document.getElementById("sidebarContainer").onclick = '';
-                    console.log("else")
-                }
-            };
-        </script>
 
 	</body>
 </html>

@@ -26,43 +26,24 @@
 		
 		<header id="headerContainer" class="header"></header>
 
-		<div id="bodyWrapper" class="wrapper">
-			<section class="mainSectionStyle">
+		<div class="spacer"></div>
+		<section class="mainSectionStyle">
+			<div class="padderS">
+				<h1 class="majorH">The Convergence Project</h1>
 				<div class="padderS">
-					<h1 class="majorH">The Convergence Project</h1>
-					<div class="padderS">
-						<h1 class="minorH">Development Snapshots:</h1>
-						<div class="padderS" style="text-align: center;">
-							<img class="myPortrait" src="images/c_1.webp" alt="" />
-							<img class="myPortrait" src="images/c_2.webp" alt="" />
-							<img class="myPortrait" src="images/c_3.webp" alt="" />
-							<img class="myPortrait" src="images/c_4.webp" alt="" />
-						</div>
-						<p class="genericP">To be revealed.</p>
+					<h1 class="minorH">Development Snapshots:</h1>
+					<div class="padderS" style="text-align: center;">
+						<img class="myPortrait" src="images/c_1.webp" alt="" />
+						<img class="myPortrait" src="images/c_2.webp" alt="" />
+						<img class="myPortrait" src="images/c_3.webp" alt="" />
+						<img class="myPortrait" src="images/c_4.webp" alt="" />
 					</div>
+					<p class="genericP">To be revealed.</p>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 
 		<footer id="footerContainer"></footer>
-
-		<script type="text/javascript">
-            function sidebarSwap() {
-        
-                if($('#sidebar').length > 0){
-                    document.getElementById("sidebarContainer").innerHTML = "";
-                    document.getElementById("sidebarContainer").style.display = "none";
-                    document.getElementById("sidebarContainer").onclick = 'sidebarSwap()';
-                    console.log("if")
-                }
-                else{
-                    $("#sidebarContainer").load("sidebar.html"); 
-                    document.getElementById("sidebarContainer").style.display = "block";
-                    document.getElementById("sidebarContainer").onclick = '';
-                    console.log("else")
-                }
-            };
-        </script>
 
 	</body>
 </html>

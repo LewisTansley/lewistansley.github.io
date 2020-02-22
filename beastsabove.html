@@ -26,46 +26,27 @@
 		
 		<header id="headerContainer" class="header"></header>
 
-		<div id="wrapper">
-			<section class="mainSectionStyle">
+		<div class="spacer"></div>
+		<section class="mainSectionStyle">
+			<div class="padderS">
+				<h1 class="majorH">The Beasts Above Project</h1>
 				<div class="padderS">
-					<h1 class="majorH">The Beasts Above Project</h1>
+					<h1 class="minorH">The Rundown.</h2>
 					<div class="padderS">
-						<h1 class="minorH">The Rundown.</h2>
+						<p class="genericP">The beasts above is a resource management / survival game set at an undisclosed time</p>
+						<p class="genericP">This game is a long - term passion project - over 3 years active so far. As a result this project has no specific release date</p>
+						<p class="genericP">Project Content: <bold>C++</bold> // <bold>Visual Studio</bold> // <bold>Unreal engine 4</bold> // <bold>Photoshop</bold></p>
 						<div class="padderS">
-							<p class="genericP">The beasts above is a resource management / survival game set at an undisclosed time</p>
-							<p class="genericP">This game is a long - term passion project - over 3 years active so far. As a result this project has no specific release date</p>
-							<p class="genericP">Project Content: <bold>C++</bold> // <bold>Visual Studio</bold> // <bold>Unreal engine 4</bold> // <bold>Photoshop</bold></p>
-							<div class="padderS">
-								<iframe class="scaler" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/5qkH_kzf1rw"></iframe>
-							</div>
-							<p class="genericP">An update video to showcase new developments and features to come soon.</p>
+							<iframe class="scaler" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/5qkH_kzf1rw"></iframe>
 						</div>
+						<p class="genericP">An update video to showcase new developments and features to come soon.</p>
 					</div>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 
 
 		<footer id="footerContainer"></footer>
-
-		<script type="text/javascript">
-            function sidebarSwap() {
-        
-                if($('#sidebar').length > 0){
-                    document.getElementById("sidebarContainer").innerHTML = "";
-                    document.getElementById("sidebarContainer").style.display = "none";
-                    document.getElementById("sidebarContainer").onclick = 'sidebarSwap()';
-                    console.log("if")
-                }
-                else{
-                    $("#sidebarContainer").load("sidebar.html"); 
-                    document.getElementById("sidebarContainer").style.display = "block";
-                    document.getElementById("sidebarContainer").onclick = '';
-                    console.log("else")
-                }
-            };
-        </script>
 
 	</body>
 </html>
