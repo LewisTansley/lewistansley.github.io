@@ -429,9 +429,16 @@ ul.icons {
     height: 50px;
     padding-right: 1em;
 }
+@media screen and (max-width:500px){
+
+    .logo{
+        height: 30px;
+        padding-right: 0.2em;
+    }
+
+}
 .bigLogo{
     height: 75px;
-    padding-right: 1em;
 }
 .fa{
     margin-right: 10px;
