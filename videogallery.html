@@ -12,15 +12,16 @@
 			$(function(){
 			$("#header").load("header.html"); 	
 			$("#footer").load("footer.html"); 
-			$("sidebarContainer").load("sidebar.html");
+			$("#sidebarContainer").load("sidebar.html");
 
 			});
 		</script> 
 	</head>
-	<body>
+	<body id="body">
 
         <section id="sidebarContainer" onclick="sidebarSwap()" style="pointer-events: none;"></section>
-	<header id="header"></header>	
+		<header id="headerContainer" class="header"></header>
+		
 			<div id="wrapper">
 
 					<section id="main" class="wrapper">
