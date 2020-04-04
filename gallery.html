@@ -62,22 +62,5 @@
 
         <footer id="footerContainer" class="footer"></footer>
         
-        <script type="text/javascript">
-            function sidebarSwap() {
-        
-                if($('#sidebar').length > 0){
-                    document.getElementById("sidebarContainer").innerHTML = "";
-                    document.getElementById("sidebarContainer").style.display = "none";
-                    document.getElementById("sidebarContainer").onclick = 'sidebarSwap()';
-                    console.log("if")
-                }
-                else{
-                    $("#sidebarContainer").load("sidebar.html"); 
-                    document.getElementById("sidebarContainer").style.display = "block";
-                    document.getElementById("sidebarContainer").onclick = '';
-                    console.log("else")
-                }
-            };
-        </script>
     </body>
 </html>
