@@ -46,7 +46,9 @@ body{
 
 
 }
-
+.wrapper{
+    height:100vh;
+}
 .background{
     background-color: #fff;
     background-repeat: repeat;
