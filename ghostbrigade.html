@@ -4,7 +4,7 @@
 
 <head>
 
-    <title>Games</title>
+    <title>Ghost Brigade</title>
     
     <link rel="manifest" href="manifest.json" />
 
@@ -28,6 +28,13 @@
 
         });
     </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+        // sw.js can literally be empty, but must existlinkedin
+        navigator.serviceWorker.register('/sw.js');
+}
+    </script>
+
 
 </head>
 <body id="body">
@@ -43,19 +50,12 @@
 
         <section class="background">
             <section class="mainSectionStyle">
-                <h2 class="majorH" style="font-weight: bolder;">Games</h2>
+                <h2 class="majorH">Charlie Brigade</h2>
                 <div class="padderS">
-                    <p style="text-align: center;">Links to all of my currently available games.</p>
+                    <p style="text-align: center;">A Run Down on My active project 'Ghost Brigade'</p>
                 </div>
-            </section>
-            <div class="spacer"></div>
-
-            <section class="mainSectionStyle">
-                <h2 class="majorH">Quiz Off</h2>
                 <div class="padderS">
-                    <p style="text-align: center;">A browser based quiz game still in active development:</p>
-                    </br>
-                    <a href="https://quiz-off.com" style="text-decoration: underline;"><p style="text-align: center;" >Quiz-off.com</p></a>
+                    <p style="text-align: center;">Ghost Brigade is a Highly Tactical Tower Defence featuring Large-Scale First person firefights spread across vast open-planned levels.</p>
                 </div>
             </section>
 

@@ -599,6 +599,12 @@ a {
     background-size: cover;
     background-position-x: center;
   }  
+  .card-image3 {
+    grid-area: image;
+    background: url("images/gun.png");
+    background-size: cover;
+    background-position-x: center;
+  }  
   .card-user-image {
     grid-area: image;
     background: url("images/me.jpg");
