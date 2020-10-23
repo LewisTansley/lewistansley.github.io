@@ -599,7 +599,7 @@ a {
     background-size: cover;
     background-position-x: center;
   }  
-  .card-image3 {
+  .card-image4 {
     grid-area: image;
     background: url("images/gun.png");
     background-size: cover;
