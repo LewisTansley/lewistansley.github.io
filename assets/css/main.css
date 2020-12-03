@@ -599,7 +599,7 @@ a {
   }  
   .card-image4 {
     grid-area: image;
-    background: url("images/gun.png");
+    background: url("images/Logo.jpg");
     background-size: cover;
     background-position-x: center;
   }  
