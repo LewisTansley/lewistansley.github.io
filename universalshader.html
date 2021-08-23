@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Articles</title>
+    
+    <link rel="manifest" href="manifest.json" />
+
+    <meta charset="utf-8"/>
+    <meta name="description" content="Staffordshire University Formula 1 Team."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
+    <meta name="theme-color" content="#dfdfdf"/>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+
+    <script>
+        $(function(){
+            $("#headerContainer").load("header.html");
+            $("#footerContainer").load("footer.html");
+            $("#sidebarContainer").load("sidebar.html");
+
+        });
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+        // sw.js can literally be empty, but must existlinkedin
+        navigator.serviceWorker.register('/sw.js');
+}
+    </script>
+
+
+</head>
+<body id="body">
+
+    <div id="bodyWrapper" class="wrapper">
+            
+        <section id="sidebarContainer" onclick="sidebarSwap()" style="pointer-events: none;"></section>
+        <header id="headerContainer" class="header"></header>
+
+        <div class="spacer"></div>            
+        <div class="spacer"></div>
+
+        <section class="background">
+            <section class="mainSectionStyle">
+                <h2 class="majorH">The Universal Shader</h2>
+
+                <div class="spacer"></div>            
+
+                <img style="display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;" src="images/ArticleP1.png" alt="">
+                <img style="display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;" src="images/ArticleP2.png" alt="">
+            </section>
+            
+            <div class="spacer"></div>
+
+            <footer id="footerContainer" class="footer"></footer>
+        </section>
+    </div>
+</body>
+
+</html>
