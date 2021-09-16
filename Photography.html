@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Gallery</title>
+    
+        <meta charset="utf-8"/>
+        <meta name="description" content="my portfolio site"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+    
+        <script>
+            $(function(){
+                $("#headerContainer").load("header.html");
+                $("#footerContainer").load("footer.html");
+                $("#sidebarContainer").load("sidebar.html");
+    
+            });
+        </script>
+    
+
+    </head>
+
+    <body id="body">
+
+        <div id="bodyWrapper" class="wrapper">
+
+            <section id="sidebarContainer" onclick="sidebarSwap()" style="pointer-events: none;"></section>
+
+            <header id="headerContainer" class="header"></header>
+            <div class="spacer"></div>
+            <div class="spacer"></div>            
+    
+            <div>
+                <section class="mainSectionStyle">
+                    <h2 class="majorH">Video Gallery</h2>
+                </section>
+                <div class="padderL">
+                    <section class="secondarySectionStyle">
+                        <div class="padderL">
+
+                            <section style="text-align: center;">
+                            
+                                <div class="elfsight-app-2fccc21e-fc1c-4ea0-81c4-a47c603d6642"></div>
+
+                            </section>
+
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer id="footerContainer" class="footer"></footer>
+        
+    </body>
+</html>
