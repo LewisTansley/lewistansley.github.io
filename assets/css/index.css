@@ -48,8 +48,8 @@ body{
     -o-filter:  brightness(50%) blur(5px) grayscale(1);
     -ms-filter:  brightness(50%) blur(5px) grayscale(1);
     position:absolute;
-    top:-10%;
-    left:-10%;
+    /*top:-10%;
+    left:-10%;*/
     width: 120%;
     height: 120%;
     opacity:0;
