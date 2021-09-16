@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <title>Home</title>
+    <title>Index</title>
     
 
     <link rel="manifest" href="manifest.json" />
@@ -12,21 +12,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
     <meta name="theme-color" content="#dfdfdf"/>
 
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 
     <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <script data-ad-client="ca-pub-4194300092004125" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-    <script>
-        $(function(){
-            $("#headerContainer").load("header.html");
-            $("#footerContainer").load("footer.html");
-            $("#sidebarContainer").load("sidebar.html");
 
-        });
-    </script>
     <script>
         if ('serviceWorker' in navigator) {
         // sw.js can literally be empty, but must exist
@@ -38,95 +29,30 @@
 </head>
 <body id="body">
 
-    <div id="bodyWrapper" class="wrapper">
-            
-        <section id="sidebarContainer" onclick="sidebarSwap()" style="pointer-events: none;"></section>
-        <header id="headerContainer" class="header"></header>
 
-        <div class="carouselContainer">
-            <div class="carouselText">
-                <p class="carouselH1">LEWIS TANSLEY</p>
-                <!-- <p class="carouselH2">One man army proving indie games can look good too.</p> -->
+    <div class="wrapper">
+
+        <div onclick="window.location='home';" class="item">
+            <div class="container">
+                <img src="assets/css/images/gun.png" />
+                <h1><b>Development</b></h1>
             </div>
         </div>
-        <div class="initialSpace"></div>
-        <div class="miniSectionContainer"><div class="miniSectionStyle"><p style="color: white;">“A lot of indie developers who became 'Overnight Successes' were working at it for ten years.”</p></div></div>
-
-        <section class="background">
-            <section class="mainSectionStyle">
-                <h2 class="majorH">Development Snapshots.</h2>
-                <div class="padderS">
-                    <p style="text-align: center;">A live feed of all my ongoing projects.</p>
-                </div>
-            </section>
-
-            <div style="z-index: 0;" class="elfsight-app-cdee6edb-2ebe-4494-94df-f38d0e788938"></div>
-
-            <div class="spacer"></div>
-            <div class="miniSectionContainer"><div class="miniSectionStyle"><p>“You can make an amazing game, but you can't make a success. Your players make the success.”</p></div></div>
-            <div class="spacer"></div>
-
-            <section class="mainSectionStyle">
-                <h2 class="majorH">My Projects</h2>
-                <div class="padderS">
-                    <section class="cardContainer">
-                        <div class="card" onclick="window.location='convergence';">
-                            <div class="card-image1"></div>
-                            <div class="card-text">
-                                <h2>Convergence</h2>
-                            </div>
-                        </div>
-                        <div class="card" onclick="window.location='denial';">
-                            <div class="card-image2"></div>
-                            <div class="card-text">
-                                <h2>Denial</h2>
-                            </div>
-                        </div>
-                        <div class="card" onclick="window.location='beastsabove';">
-                            <div class="card-image3"></div>
-                            <div class="card-text">
-                                <h2>The Beasts Above</h2>
-                            </div>
-                        </div>
-                        <div class="card" onclick="window.location='smpltowers';">
-                            <div class="card-image4"></div>
-                            <div class="card-text">
-                                <h2>SMPL Towers</h2>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <h2 class="majorH">Articles</h2>
-
-                <div class="padderS"style="text-align: center; text-decoration:underline;" >
-
-                    <a href="articles">A compiled list of my personal articles.</a>
-
-                </div>
-
-
-            </section>
-            
-        
-            <div class="miniSectionContainer"><div class="miniSectionStyle"><p>“There is only One Man Playing your Game, You!”</p></div></div>
-            <div class="spacer"></div>
-
-            <h2 class="minorH">ABOUT</h2>
-            <div class="padderS">
-                <div class="cardContainer">
-                    <div class="card-user">
-                        <div class="card-user-image"></div>
-                        <div class="card-user-text">
-                            <p>Hi, I am Lewis. I have been active in software and video games development for over a decade. I am an experienced Data Analyst with a demonstrated history of working in the information technology and services industry. Skilled in Service Delivery, Data Analysis, Real-time Data, Programming, and Service Delivery Management. Strong information technology professional with a bsc hons focused in games development and programming from Staffordshire University.</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="item">
+            <div class="container">
+                <img src="assets/css/images/P1002038.jpg" />
+                <h1><b>Photography</b></h1>
             </div>
+        </div>
+        <div class="bg">
 
-            <footer id="footerContainer" class="footer"></footer>
-        </section>
+          <img src="assets/css/images/gun.png" />
+          <img src="assets/css/images/P1002038.jpg" />
+
+        </div>
     </div>
+
+
 </body>
 
 </html>
