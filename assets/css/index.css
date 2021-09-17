@@ -5,6 +5,7 @@ body{
     overflow: hidden;
     margin: 0;
     width: 100vw;
+    background-color: #000;
 }
 
 .wrapper  {
