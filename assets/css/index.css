@@ -17,7 +17,11 @@ body{
 
   }
 
-
+  @media screen and (orientation:portrait) {
+    .wrapper{
+      flex-direction:column;
+    }
+  }
   
   .item {
     z-index:1;
