@@ -93,7 +93,7 @@ body{
     top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 100%;
     background-color: #00000070;
   }
   .bg img:nth-child(1),
