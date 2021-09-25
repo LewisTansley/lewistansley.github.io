@@ -582,7 +582,6 @@ a {
     grid-area: image;
     background: url("images/article1.JPG");
     background-size: cover;
-    background-position-x: center;
  
   }
   .card-image-article2{
