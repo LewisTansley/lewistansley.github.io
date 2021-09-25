@@ -528,7 +528,13 @@ a {
     z-index: 0;
     background-color: #40404050;
     backdrop-filter: blur(2px);
-
+    box-shadow:
+        0px 0px 2.2px rgba(0, 0, 0, 0.07),
+        0px 0px 5.3px rgba(0, 0, 0, 0.05),
+        0px 0px 10px rgba(0, 0, 0, 0.042),
+        0px 0px 17.9px rgba(0, 0, 0, 0.035),
+        0px 0px 33.4px rgba(0, 0, 0, 0.028),
+        0px 0px 80px rgba(0, 0, 0, 0.02);
 
   }
   .card-user {
@@ -547,8 +553,14 @@ a {
     margin-bottom: 30px;
     color: #404040;
     z-index: 0;
-    box-shadow: 0px 0px 30px #00000030;
-
+    box-shadow:
+    0px 0px 2.2px rgba(0, 0, 0, 0.07),
+    0px 0px 5.3px rgba(0, 0, 0, 0.05),
+    0px 0px 10px rgba(0, 0, 0, 0.042),
+    0px 0px 17.9px rgba(0, 0, 0, 0.035),
+    0px 0px 33.4px rgba(0, 0, 0, 0.028),
+    0px 0px 80px rgba(0, 0, 0, 0.02)
+  ;
   }
   .card h2{
     color: inherit;
@@ -685,7 +697,13 @@ a {
   }  
   .card:hover {
     transform: scale(1.15);
-    box-shadow: 0px 0px 25px #00000070;
+    box-shadow:
+        0px 0px 2.2px rgba(0, 0, 0, 0.02),
+        0px 0px 5.3px rgba(0, 0, 0, 0.028),
+        0px 0px 10px rgba(0, 0, 0, 0.035),
+        0px 0px 17.9px rgba(0, 0, 0, 0.042),
+        0px 0px 33.4px rgba(0, 0, 0, 0.05),
+        0px 0px 80px rgba(0, 0, 0, 0.07);
     color: #fff;
     background-color: #574b90;
     z-index: 5;
@@ -724,7 +742,7 @@ a {
     transition: 0.3s ease;
     color: #000;
     z-index: -2;
-    background: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url('images/SiteBanner.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('images/SiteBanner.jpg');
     background-position:center top;
     background-size: cover;
     
@@ -756,7 +774,18 @@ a {
     top: 33%;
     z-index: 1;
     position: relative;
-    /*text-shadow: 0 0 15px #404040aa;*/
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 
 }
 .carouselH2{
