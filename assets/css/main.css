@@ -587,7 +587,6 @@ a {
   }
   .card-image-article2{
     grid-area: image;
-
     background: url("images/article2.JPG");
     background-size: cover;
     background-position-x: center;
@@ -595,7 +594,6 @@ a {
   }
   .card-image-article3{
     grid-area: image;
-
     background: url("images/article3.JPG");
     background-size: cover;
     background-position-x: center;
@@ -603,7 +601,6 @@ a {
   }
   .card-image-article4{
     grid-area: image;
-
     background: url("images/article4.JPG");
     background-size: cover;
     background-position-x: center;
