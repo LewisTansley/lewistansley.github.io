@@ -547,7 +547,7 @@ a {
     margin-bottom: 30px;
     color: #404040;
     z-index: 0;
-    box-shadow: 0px 0px 10px #00000070;
+    box-shadow: 0px 0px 30px #00000030;
 
   }
   .card h2{
@@ -578,6 +578,37 @@ a {
     overflow-y: auto;
 
 } 
+.card-image-article1{
+    grid-area: image;
+    background: url("images/articleP1.png");
+    background-size: cover;
+    background-position-x: center;
+ 
+  }
+  .card-image-article2{
+    grid-area: image;
+
+    background: url("images/article2.JPG");
+    background-size: cover;
+    background-position-x: center;
+ 
+  }
+  .card-image-article3{
+    grid-area: image;
+
+    background: url("images/article3.JPG");
+    background-size: cover;
+    background-position-x: center;
+ 
+  }
+  .card-image-article4{
+    grid-area: image;
+
+    background: url("images/article4.JPG");
+    background-size: cover;
+    background-position-x: center;
+ 
+  }
   .card-image1 {
     grid-area: image;
     background: url("images/convergence.jpg");
@@ -603,6 +634,7 @@ a {
     background-position-x: center;
     background-repeat: no-repeat;
   }  
+
   .card-user-image {
     grid-area: image;
     background: url("images/me.jpg");
