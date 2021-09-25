@@ -87,21 +87,15 @@ html{
     width: 10px;
   }
   
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #000;
-    backdrop-filter: blur(5px);
-
-  }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #404040aa;
+    background: #80808050;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #404040;
+    background: #80808080;
   }
 /* Headers*/
 
