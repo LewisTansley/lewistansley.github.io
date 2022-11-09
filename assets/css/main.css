@@ -39,9 +39,8 @@ section, summary, time, mark, audio, video {
 body{
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #fff;
+    background-color: var(--background);
     background-repeat: repeat;
-    background-image: url("images/dot-grid.png");
     background-attachment: fixed;
 
 
@@ -50,13 +49,15 @@ body{
     height:100vh;
 }
 .background{
-    background-color: #fff;
+    background-color: var(--background);
     background-repeat: repeat;
-    background-image: url("images/dot-grid.png");
     background-attachment: fixed;
     width: 100%;
-    max-width: 100%;
+    max-width: 97.5%;
     height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
     
 }
 
@@ -103,7 +104,7 @@ html{
 h1.majorH{
 
     padding: 0.5em 0.5em 0.5em 1em;
-    color:#000;
+    color:var(--colortext);
     font-size: 24pt;
     font-weight: lighter;
     text-transform: uppercase;
@@ -114,7 +115,7 @@ h1.minorH{
 
     border-radius: 25px;
 
-    color:#000;
+    color:var(--monotext);
     font-size: 20pt;
     font-weight: lighter;
     position: relative;
@@ -128,22 +129,24 @@ h2.majorH{
 
 
     padding: 0.25em 0.25em 0.25em 1em;
-    color:#000;
+    color:var(--colortext);
     font-size: 20pt;
-    font-weight: lighter;
+    font-weight: bolder;
+    letter-spacing: 0.3em;
     text-align: center;
-    border-bottom: 1px solid #000;
-    
+    border-bottom: 1px solid var(--colortext);
+
 
 
 }
 h2.minorH{
     padding: 0.25em 0.25em 0.25em 1em;
-    color:#000;
+    color:var(--colortext);
     font-size: 20pt;
-    font-weight: lighter;
+    font-weight: bolder;
+    letter-spacing: 0.3em;
     text-align: center;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--colortext);
 }
 .genericP{
     color:#000;
@@ -322,13 +325,11 @@ ul.icons {
 }
 .header{
     list-style: none;
-    background-color: #80808050;
     text-align: right;
     position: fixed;
     width: 100%;
     z-index: 1;
     transition: top 0.5s; 
-    backdrop-filter: blur(5px);
 }
 .header nav{
     -moz-flex: 1;
@@ -461,13 +462,13 @@ a {
     -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
     transition: color 0.2s ease, border-bottom-color 0.2s ease;
     border-bottom: none;
-    color: #000;
+    color: var(--colortext);
     text-decoration: none;
 }
 
     a:hover {
         border-bottom-color: transparent;
-        color:#9e579d;
+        color:var(--monotext);
         cursor: pointer;
     
     }
@@ -518,9 +519,9 @@ a {
     margin-right: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
-    color: #707070;
+    color: var(--colortext);
     z-index: 0;
-    background-color: #40404050;
+    background-color: var(--middleground);
     backdrop-filter: blur(2px);
     box-shadow:
         0px 0px 2.2px rgba(0, 0, 0, 0.07),
@@ -530,6 +531,8 @@ a {
         0px 0px 33.4px rgba(0, 0, 0, 0.028),
         0px 0px 80px rgba(0, 0, 0, 0.02);
 
+    border-radius: 30px;
+    overflow: hidden;
   }
   .card-user {
     max-width: 500px;
@@ -537,7 +540,7 @@ a {
     display: grid;
     grid-template-rows: 400px 300px;
     grid-template-areas: "image" "text";
-    background: #fff;
+    background: var(--middleground);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     transition: 0.3s ease;
@@ -545,7 +548,7 @@ a {
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    color: #404040;
+    color: var(--colortext);
     z-index: 0;
     box-shadow:
     0px 0px 2.2px rgba(0, 0, 0, 0.07),
@@ -553,8 +556,9 @@ a {
     0px 0px 10px rgba(0, 0, 0, 0.042),
     0px 0px 17.9px rgba(0, 0, 0, 0.035),
     0px 0px 33.4px rgba(0, 0, 0, 0.028),
-    0px 0px 80px rgba(0, 0, 0, 0.02)
-  ;
+    0px 0px 80px rgba(0, 0, 0, 0.02);
+    border-radius: 30px;
+    overflow: hidden;
   }
   .card h2{
     color: inherit;
@@ -632,9 +636,8 @@ a {
   .card-image4 {
     grid-area: image;
     background: url("images/Logo.jpg");
-    background-size: contain;
+    background-size: cover;
     background-position-x: center;
-    background-repeat: no-repeat;
   }  
 
   .card-user-image {
@@ -698,8 +701,8 @@ a {
         0px 0px 17.9px rgba(0, 0, 0, 0.042),
         0px 0px 33.4px rgba(0, 0, 0, 0.05),
         0px 0px 80px rgba(0, 0, 0, 0.07);
-    color: #fff;
-    background-color: #574b90;
+    color: var(--monotext);
+    background-color: var(--colortext);
     z-index: 5;
     backdrop-filter: unset;
 
@@ -903,3 +906,95 @@ a {
     font-weight: lighter;
     font-size: 28px;
 }
+.scrolldown {
+    --color: var(--monotext);
+    --sizeX: 30px;
+    --sizeY: 50px;
+    position: relative;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    margin-left: 49%;
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    cursor: pointer;
+    top: 15%;
+  }
+  
+  .scrolldown::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: var(--color);
+    border-radius: 100%;
+    animation: scrolldown-anim 2s infinite;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px var(--background);
+  }
+  
+  @keyframes scrolldown-anim {
+    0% {
+      opacity: 0;
+      height: 6px;
+    }
+  
+    40% {
+      opacity: 1;
+      height: 10px;
+    }
+  
+    80% {
+      transform: translate(0, 20px);
+      height: 10px;
+      opacity: 0;
+    }
+  
+    100% {
+      height: 3px;
+      opacity: 0;
+    }
+  }
+  
+  .chevrons {
+    padding: 6px 0 0 0;
+    margin-left: -3px;
+    margin-top: 48px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .chevrondown {
+    margin-top: -6px;
+    position: relative;
+    border: solid var(--color);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+  }
+  
+  .chevrondown:nth-child(odd) {
+    animation: pulse54012 500ms ease infinite alternate;
+  }
+  
+  .chevrondown:nth-child(even) {
+    animation: pulse54012 500ms ease infinite alternate 250ms;
+  }
+  
+  @keyframes pulse54012 {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 0.5;
+    }
+  }
