@@ -1,0 +1,16 @@
+:root {
+    --background:  #2E3440;
+    --middleground:  #3B4252;
+    --foreground:  #434C5E;
+    --highground:  #4C566A;
+    --colortext:  #81A1C1;
+    --monotext:  #ECEFF4;
+
+    --nord4:  #08DEE9;
+    --nord7:  #8FBCBB;
+    --nord11: #BF616A;
+    --nord5:  #E5E9F0;
+    --nord8:  #88C0D0;
+    --nord12: #D88770;
+    --nord13: #EBCB8B;
+}
