@@ -176,7 +176,7 @@ a{
 }
 
 .split > :nth-child(2n - 1) {
-    border-bottom: solid 1px #000;
+    border-bottom: solid 1px var(--monotext);
 }
 
 .myPortrait{
@@ -323,6 +323,7 @@ ul.icons {
 }
 .footPadder{
     padding: 1em;
+    color: var(--monotext);
 }
 .header{
     list-style: none;
