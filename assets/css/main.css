@@ -497,6 +497,7 @@ a {
     vertical-align: text-bottom;
     padding-top: 14px;
     padding-right: 9px;
+    color: var(--colortext);
 }
 .bigX:hover{
     transform: scale(1.2);
