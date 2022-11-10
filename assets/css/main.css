@@ -354,7 +354,7 @@ ul.icons {
 /* sidebar */
 .sidebar{
 
-    background-color: var(--background);
+    background-color: #00000000;
     cursor: default;
     height: 100%;
     left: 0;
