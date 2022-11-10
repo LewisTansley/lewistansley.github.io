@@ -349,12 +349,12 @@ ul.icons {
     padding: 0;
     vertical-align: middle;
     padding-left: 0.5em;
-    color:#574b90;
+    color: var(--colortext);
 }
 /* sidebar */
 .sidebar{
 
-    background-color: #00000050;
+    background-color: var(--background);
     cursor: default;
     height: 100%;
     left: 0;
@@ -367,7 +367,7 @@ ul.icons {
     z-index: 8;
     transition: ease 0.3s;
     opacity: 1;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(32px);
     
 }
 .sidebar > .inner{
@@ -419,10 +419,10 @@ ul.icons {
     list-style: none;
 }
 .siteSearch{
-    background-color: #000000aa;
+    background-color: var(--background);
     border-style: none;
     padding:1em;
-    border-radius: 10px;
+    border-radius: 30px;
   }
 .logo{
     height: 50px;
@@ -476,8 +476,8 @@ a {
     }
 .button{
 
-    background-color: #fff;
-    color: #000;
+    background-color: var(--background);
+    color: var(--colortext);
     padding: 0.25em 1em;
     border-radius: 25px;
 
@@ -553,12 +553,12 @@ a {
     color: var(--colortext);
     z-index: 0;
     box-shadow:
-    0px 0px 2.2px rgba(0, 0, 0, 0.07),
-    0px 0px 5.3px rgba(0, 0, 0, 0.05),
-    0px 0px 10px rgba(0, 0, 0, 0.042),
-    0px 0px 17.9px rgba(0, 0, 0, 0.035),
-    0px 0px 33.4px rgba(0, 0, 0, 0.028),
-    0px 0px 80px rgba(0, 0, 0, 0.02);
+        0px 0px 2.2px rgba(0, 0, 0, 0.07),
+        0px 0px 5.3px rgba(0, 0, 0, 0.05),
+        0px 0px 10px rgba(0, 0, 0, 0.042),
+        0px 0px 17.9px rgba(0, 0, 0, 0.035),
+        0px 0px 33.4px rgba(0, 0, 0, 0.028),
+        0px 0px 80px rgba(0, 0, 0, 0.02);
     border-radius: 30px;
     overflow: hidden;
   }
