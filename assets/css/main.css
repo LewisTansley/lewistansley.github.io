@@ -45,6 +45,14 @@ body{
 
 
 }
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+html {
+    scroll-behavior: initial;
+  }
 .wrapper{
     height:100vh;
 }
